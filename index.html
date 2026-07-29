@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Évêques Europe</title>
+
+    <meta name="description" content="Trouver rapidement l'évêque d'un diocèse en Europe">
+
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#1c3557">
+</head>
+
+<body>
+
+<header class="app-header">
+    <div class="brand">
+        <h1>Évêques Europe</h1>
+        <p>Trouver un évêque en quelques secondes</p>
+    </div>
+</header>
+
+
+<main>
+
+    <section class="search-section">
+
+        <label for="search">
+            Rechercher une ville, un diocèse ou un département
+        </label>
+
+        <div class="search-box">
+
+            <input
+                id="search"
+                type="search"
+                autocomplete="off"
+                placeholder="Ex : Paris, Lyon, Chartres..."
+            >
+
+            <button id="gps-button" aria-label="Utiliser ma position">
+                📍
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section id="results" class="results">
+
+        <!-- Les résultats de recherche apparaîtront ici -->
+
+    </section>
+
+
+    <section id="diocese-card" class="diocese-card hidden">
+
+        <div class="bishop-photo">
+            <img id="bishop-image"
+                 src=""
+                 alt="Photo de l'évêque">
+        </div>
+
+
+        <h2 id="diocese-name">
+            Diocèse
+        </h2>
+
+
+        <h3 id="bishop-name">
+            Évêque
+        </h3>
+
+
+        <p id="bishop-date">
+        </p>
+
+        <p id="bishop-motto" class="motto">
+        </p>
+
+
+        <div class="details">
+
+            <p>
+                <strong>Province :</strong>
+                <span id="province"></span>
+            </p>
+
+            <p>
+                <strong>Métropolitain :</strong>
+                <span id="metropolitan"></span>
+            </p>
+
+            <p>
+                <strong>Région :</strong>
+                <span id="region"></span>
+            </p>
+
+            <p id="departements-wrapper">
+                <strong>Département(s) :</strong>
+                <span id="departements"></span>
+            </p>
+
+            <p id="villes-wrapper">
+                <strong>Grandes villes :</strong>
+                <span id="grandes-villes"></span>
+            </p>
+
+        </div>
+
+
+        <div id="liturgy"
+             class="liturgy hidden">
+
+            <h4>Prière eucharistique</h4>
+
+            <p id="liturgy-text"></p>
+
+        </div>
+
+
+        <a id="diocese-link"
+           class="link-button"
+           target="_blank">
+            🌐 Site du diocèse
+        </a>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        Base hors ligne • Mise à jour manuelle
+    </p>
+
+</footer>
+
+
+<script src="data/demo.js"></script>
+<script src="js/search.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

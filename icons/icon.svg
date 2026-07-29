@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Évêques Europe">
+  <rect width="512" height="512" rx="112" fill="#1c3557"/>
+  <path d="M256 86c54 50 104 119 104 193 0 82-46 138-104 138S152 361 152 279c0-74 50-143 104-193Z" fill="#f7f5f1"/>
+  <path d="M256 134v238M206 218h100" stroke="#1c3557" stroke-width="28" stroke-linecap="round"/>
+</svg>

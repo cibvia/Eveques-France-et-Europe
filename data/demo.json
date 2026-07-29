@@ -1,0 +1,129 @@
+[
+  {
+    "id": "fr-paris",
+    "ville": "Paris",
+    "diocese": "Archidiocèse de Paris",
+    "type": "archidiocèse",
+    "pays": "France",
+    "eveque": {
+      "nom": "Laurent Ulrich",
+      "titre": "Archevêque de Paris",
+      "depuis": "2022-05-23",
+      "photo": "images/bishops/laurent-ulrich.jpg",
+      "devise": ""
+    },
+    "province": "Paris",
+    "metropolitain": "Laurent Ulrich",
+    "region": "Île-de-France",
+    "departements": [
+      "Paris"
+    ],
+    "grandes_villes": [
+      "Paris"
+    ],
+    "site": "https://dioceseparis.fr",
+    "liturgie": {
+      "particulier": false
+    }
+  },
+  {
+    "id": "fr-lyon",
+    "ville": "Lyon",
+    "diocese": "Archidiocèse de Lyon",
+    "type": "archidiocèse",
+    "pays": "France",
+    "eveque": {
+      "nom": "Olivier de Germay",
+      "titre": "Archevêque de Lyon",
+      "depuis": "2020-10-22",
+      "photo": "images/bishops/olivier-de-germay.jpg",
+      "devise": ""
+    },
+    "province": "Lyon",
+    "metropolitain": "Olivier de Germay",
+    "region": "Auvergne-Rhône-Alpes",
+    "departements": [
+      "Rhône"
+    ],
+    "grandes_villes": [
+      "Lyon",
+      "Villeurbanne"
+    ],
+    "site": "https://lyon.catholique.fr",
+    "liturgie": {
+      "particulier": false
+    }
+  },
+  {
+    "id": "fr-chartres",
+    "ville": "Chartres",
+    "diocese": "Diocèse de Chartres",
+    "type": "diocèse",
+    "pays": "France",
+    "eveque": {
+      "nom": "Philippe Christory",
+      "titre": "Évêque de Chartres",
+      "depuis": "2018-04-14",
+      "photo": "images/bishops/philippe-christory.jpg",
+      "devise": ""
+    },
+    "province": "Tours",
+    "metropolitain": "Vincent Jordy",
+    "region": "Centre-Val de Loire",
+    "departements": [
+      "Eure-et-Loir"
+    ],
+    "grandes_villes": [
+      "Chartres",
+      "Dreux"
+    ],
+    "site": "https://diocese-chartres.com",
+    "liturgie": {
+      "particulier": false
+    }
+  },
+  {
+    "id": "fr-example-vacant",
+    "ville": "Exemple",
+    "diocese": "Diocèse exemple",
+    "type": "diocèse",
+    "pays": "France",
+    "eveque": null,
+    "province": "Exemple",
+    "metropolitain": "Exemple",
+    "region": "France",
+    "departements": [],
+    "grandes_villes": [],
+    "site": "",
+    "liturgie": {
+      "particulier": true,
+      "statut": "siege_vacant",
+      "administrateur": null
+    }
+  },
+  {
+    "id": "de-koeln",
+    "ville": "Cologne",
+    "diocese": "Archidiocèse de Cologne",
+    "type": "archidiocèse",
+    "pays": "Allemagne",
+    "eveque": {
+      "nom": "Rainer Maria Woelki",
+      "titre": "Cardinal archevêque de Cologne",
+      "depuis": "2014-09-20",
+      "photo": "images/bishops/rainer-woelki.jpg",
+      "devise": ""
+    },
+    "province": "Cologne",
+    "metropolitain": "Rainer Maria Woelki",
+    "region": "Rhénanie-du-Nord-Westphalie",
+    "departements": [],
+    "grandes_villes": [
+      "Cologne"
+    ],
+    "site": "https://www.erzbistum-koeln.de",
+    "liturgie": {
+      "particulier": false
+    }
+  }
+]

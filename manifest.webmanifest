@@ -1,0 +1,18 @@
+{
+  "name": "Évêques Europe",
+  "short_name": "Évêques",
+  "description": "Trouver rapidement l'évêque d'un diocèse en Europe.",
+  "lang": "fr-FR",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1c3557",
+  "background_color": "#f7f5f1",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
