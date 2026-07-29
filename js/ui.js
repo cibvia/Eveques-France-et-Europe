@@ -6,7 +6,7 @@
 const resultsContainer = document.getElementById("results");
 const card = document.getElementById("diocese-card");
 
-window.displayResults = function(items) {
+window.displayResults = function (items) {
     resultsContainer.innerHTML = "";
 
     if (!items.length) {
@@ -24,11 +24,10 @@ window.displayResults = function(items) {
 
             <div class="result-subtitle">
                 ${item.diocese}
-                ${
-                    item.eveque
-                    ? " • " + item.eveque.nom
-                    : " • Siège vacant"
-                }
+                ${item.eveque
+                ? " • " + item.eveque.nom
+                : " • Siège vacant"
+            }
             </div>
         `;
 
@@ -52,7 +51,7 @@ function showDiocese(diocese) {
     const image = document.getElementById("bishop-image");
 
     if (bishop) {
-        bishopName.textContent = `${bishop.titre} ${bishop.nom}`;
+        bishopName.textContent = `${bishop.nom}, ${bishop.titre}`;
         bishopDate.textContent = bishop.depuis ? "En fonction depuis le " + formatDate(bishop.depuis) : "";
         if (bishopMotto) {
             bishopMotto.textContent = bishop.devise ? `« ${bishop.devise} »` : "";
