@@ -92,6 +92,32 @@ button {
     cursor: pointer;
 }
 
+button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+#update-button {
+    width: auto;
+    padding: 0 16px;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.update-status {
+    margin: 6px 0 0;
+    font-size: 0.85rem;
+    min-height: 1.1em;
+}
+
+.update-status.success {
+    color: #1f7a3d;
+}
+
+.update-status.error {
+    color: #b3261e;
+}
+
 .results {
     margin-top: 20px;
 }
@@ -219,4 +245,5 @@ footer {
     .app-header {
         padding-left: calc((100% - 700px) / 2);
     }
-}
+   }
+   
