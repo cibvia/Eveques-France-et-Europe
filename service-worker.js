@@ -1,4 +1,4 @@
-const CACHE_NAME = "eveques-europe-v1";
+const CACHE_NAME = "eveques-europe-v2";
 
 const APP_FILES = [
     "./",
@@ -38,3 +38,4 @@ self.addEventListener("fetch", event => {
             .then(response => response || fetch(event.request))
     );
 });
+        
