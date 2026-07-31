@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-dioceses:
@@ -29,15 +30,15 @@ jobs:
       - name: Lancer le scraping (catholic-hierarchy.org)
         run: npm run update-dioceses
 
-      - name: Committer les changements si nécessaire
-        run: |
-          git config user.name "eveques-bot"
-          git config user.email "actions@users.noreply.github.com"
-
-          if git diff --quiet -- data/dioceses.json; then
-            echo "Aucun changement, rien à committer."
-          else
-            git add data/dioceses.json
-            git commit -m "Mise à jour automatique des diocèses ($(date -u +%Y-%m-%d))"
-            git push
-          fi
+      - name: Ouvrir une Pull Request si des changements sont détectés
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Mise à jour automatique des diocèses (${{ github.run_id }})"
+          branch: updateDioceses
+          delete-branch: true
+          title: "Mise à jour automatique des diocèses — ${{ github.run_id }}"
+          body: |
+            Mise à jour générée automatiquement à partir de catholic-hierarchy.org.
+            Vérifie le diff avant de fusionner (nouveaux évêques, sièges vacants, etc.).
+          add-paths: data/dioceses.json
+          
