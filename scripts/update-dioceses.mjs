@@ -10,6 +10,8 @@
       les infos qui changent (évêque en poste, date de nomination,
       site officiel du diocèse).
    3. Fusionne le tout et écrit data/dioceses.json.
+   4. Compare avec la version précédente et n'annonce que les
+      VRAIS changements d'évêque (pas les échecs de scraping).
 
    Ce script est conçu pour tourner via GitHub Actions
    (.github/workflows/update-dioceses.yml), de façon planifiée,
@@ -33,6 +35,7 @@ import * as cheerio from "cheerio";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const STATIC_PATH = path.join(__dirname, "..", "data", "dioceses-static.json");
 const OUTPUT_PATH = path.join(__dirname, "..", "data", "dioceses.json");
+const SUMMARY_PATH = path.join(__dirname, "..", "data", "update-summary.md");
 
 const USER_AGENT =
     "EvequesFranceEuropeBot/1.0 (+https://github.com/cibvia/Eveques-France-et-Europe; " +
@@ -44,6 +47,29 @@ const MONTHS = {
     Jan: "01", Feb: "02", Mar: "03", Apr: "04", May: "05", Jun: "06",
     Jul: "07", Aug: "08", Sep: "09", Oct: "10", Nov: "11", Dec: "12"
 };
+
+// Rôles reconnus comme "évêque en exercice" (on ignore auxiliaires/émérites/coadjuteurs)
+const ROLE_ALTERNATION =
+    "Cardinal Archbishop|Cardinal Bishop|Archbishop Emeritus|Bishop Emeritus|" +
+    "Auxiliary Bishop|Coadjutor Archbishop|Coadjutor Bishop|Apostolic Administrator|" +
+    "Archbishop|Bishop";
+
+// Entre le nom et le rôle, catholic-hierarchy.org insère parfois l'abréviation
+// de la congrégation religieuse du titulaire, séparée par une virgule :
+// "Jean-Marc Micas, P.S.S., Bishop of Tarbes..." ou
+// "Raymond de Felgar, O.P., Bishop of ...".
+// On l'absorbe explicitement pour ne pas la capturer à la place du nom.
+const CONGREGATION_TOKEN = "[\\p{L}.''\\-]{1,15}";
+const OPTIONAL_CONGREGATION = `(?:${CONGREGATION_TOKEN}(?:\\s+${CONGREGATION_TOKEN}){0,2},\\s*)?`;
+
+const NAME_ROLE_REGEX = new RegExp(
+    `([A-ZÀ-Þ][\\p{L}'’.\\- ]{2,80}?),\\s*${OPTIONAL_CONGREGATION}(${ROLE_ALTERNATION})`,
+    "gu"
+);
+
+// Signal explicite de vacance sur catholic-hierarchy.org (à ne pas confondre
+// avec un simple échec de parsing du nom).
+const EXPLICIT_VACANCY_REGEX = /\bSee\s+is\s+Vacant\b/i;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -75,6 +101,14 @@ async function fetchDiocesePage(slug) {
  * Basé sur l'analyse du texte visible de la page (assez stable dans le temps),
  * plutôt que sur des sélecteurs CSS précis (le site est un générateur statique
  * ancien, sans classes CSS descriptives).
+ *
+ * Retourne toujours un champ `parseStatus` :
+ *   - "ok"            : évêque trouvé normalement
+ *   - "vacant"        : vacance CONFIRMÉE explicitement par la page
+ *   - "parse_failed"  : aucun nom n'a pu être extrait, mais rien n'indique
+ *                        non plus une vraie vacance -> à ne PAS écraser
+ *                        automatiquement, il vaut mieux garder la valeur
+ *                        précédente et le signaler.
  */
 function extractDioceseInfo(html) {
     const $ = cheerio.load(html);
@@ -101,13 +135,18 @@ function extractDioceseInfo(html) {
 
     let eveque = null;
     let administrateur = null;
+    let parseStatus = "parse_failed";
 
     if (bishopsSectionMatch) {
         const section = bishopsSectionMatch[1];
-        const roleRegex =
-            /([A-ZÀ-Þ][\p{L}'’.\- ]{3,80}?),\s*(Cardinal Archbishop|Cardinal Bishop|Archbishop Emeritus|Bishop Emeritus|Auxiliary Bishop|Coadjutor Archbishop|Coadjutor Bishop|Apostolic Administrator|Archbishop|Bishop)/gu;
+
+        if (EXPLICIT_VACANCY_REGEX.test(section)) {
+            parseStatus = "vacant";
+        }
+
+        NAME_ROLE_REGEX.lastIndex = 0;
         let match;
-        while ((match = roleRegex.exec(section)) !== null) {
+        while ((match = NAME_ROLE_REGEX.exec(section)) !== null) {
             const [, rawName, role] = match;
             const name = rawName.trim();
 
@@ -119,6 +158,7 @@ function extractDioceseInfo(html) {
             }
 
             eveque = { nom: name, titre: role };
+            parseStatus = "ok";
             break;
         }
     }
@@ -136,14 +176,27 @@ function extractDioceseInfo(html) {
         }
     }
 
-    return { type, site, region, eveque, administrateur };
+    return { type, site, region, eveque, administrateur, parseStatus };
 }
 
 async function main() {
     const staticData = JSON.parse(await fs.readFile(STATIC_PATH, "utf8"));
+
+    // Version précédente, pour calculer le vrai diff (pas juste "fetch réussi").
+    let previousById = new Map();
+    try {
+        const previous = JSON.parse(await fs.readFile(OUTPUT_PATH, "utf8"));
+        previousById = new Map(previous.map(d => [d.id, d]));
+    } catch {
+        // Premier run, pas de fichier précédent : tout sera considéré "nouveau".
+    }
+
     const results = [];
-    let updated = 0;
+    let fetched = 0;
     let failed = 0;
+    let parseFailures = [];
+    let realAppointments = []; // vrais changements d'évêque
+    let realVacancies = [];    // vraies nouvelles vacances confirmées
 
     for (const entry of staticData) {
         const base = {
@@ -160,6 +213,8 @@ async function main() {
             site: entry.site
         };
 
+        const previous = previousById.get(entry.id);
+
         if (entry.eveque_fallback) base.eveque = entry.eveque_fallback;
         if (entry.liturgie_fallback) base.liturgie = entry.liturgie_fallback;
 
@@ -173,12 +228,13 @@ async function main() {
         try {
             const html = await fetchDiocesePage(entry.chSlug);
             const info = extractDioceseInfo(html);
+            fetched++;
 
             base.type = info.type ?? base.type;
             base.site = info.site ?? base.site;
             base.region = info.region ?? base.region;
 
-            if (info.eveque) {
+            if (info.parseStatus === "ok" && info.eveque) {
                 base.eveque = {
                     nom: info.eveque.nom,
                     titre: info.eveque.titre,
@@ -188,26 +244,71 @@ async function main() {
                     photo:
                         entry.eveque_fallback && entry.eveque_fallback.nom === info.eveque.nom
                             ? entry.eveque_fallback.photo
-                            : undefined,
+                            : previous?.eveque?.nom === info.eveque.nom
+                                ? previous.eveque.photo
+                                : undefined,
                     devise:
                         entry.eveque_fallback && entry.eveque_fallback.nom === info.eveque.nom
                             ? entry.eveque_fallback.devise
-                            : undefined
+                            : previous?.eveque?.nom === info.eveque.nom
+                                ? previous.eveque.devise
+                                : undefined
                 };
                 delete base.liturgie;
                 console.log(`OK — ${info.eveque.nom}`);
-            } else {
+
+                const previousNom = previous?.eveque?.nom;
+                const previousDepuis = previous?.eveque?.depuis;
+                const isRealChange =
+                    previous !== undefined &&
+                    (previousNom !== info.eveque.nom || previousDepuis !== (info.eveque.depuis ?? null)) &&
+                    !previous?.liturgie?.statut; // ignore les sorties de "vacant" déjà traitées séparément
+                if (previous === undefined || previousNom !== info.eveque.nom) {
+                    if (previousNom && previousNom !== info.eveque.nom) {
+                        realAppointments.push({
+                            id: entry.id,
+                            diocese: entry.diocese,
+                            ancien: previousNom,
+                            nouveau: info.eveque.nom,
+                            depuis: info.eveque.depuis
+                        });
+                    } else if (previous?.liturgie?.statut === "siege_vacant") {
+                        realAppointments.push({
+                            id: entry.id,
+                            diocese: entry.diocese,
+                            ancien: "(siège vacant)",
+                            nouveau: info.eveque.nom,
+                            depuis: info.eveque.depuis
+                        });
+                    }
+                }
+            } else if (info.parseStatus === "vacant") {
                 delete base.eveque;
                 base.liturgie = info.administrateur
                     ? { statut: "siege_vacant", administrateur: info.administrateur }
                     : { statut: "siege_vacant" };
-                console.log("OK — siège vacant");
-            }
+                console.log("OK — siège vacant (confirmé)");
 
-            updated++;
+                if (previous?.eveque?.nom) {
+                    realVacancies.push({ id: entry.id, diocese: entry.diocese, ancien: previous.eveque.nom });
+                }
+            } else {
+                // parse_failed : on ne sait pas si c'est vacant ou juste un échec
+                // de lecture -> on GARDE la valeur précédente plutôt que de
+                // basculer à tort sur "vacant".
+                if (previous?.eveque) {
+                    base.eveque = previous.eveque;
+                } else if (previous?.liturgie) {
+                    base.liturgie = previous.liturgie;
+                }
+                parseFailures.push(entry.id);
+                console.log("⚠ échec de lecture du nom — valeurs précédentes conservées");
+            }
         } catch (err) {
             console.log(`échec (${err.message}) — valeurs précédentes conservées`);
             failed++;
+            if (previous?.eveque) base.eveque = previous.eveque;
+            else if (previous?.liturgie) base.liturgie = previous.liturgie;
         }
 
         results.push(base);
@@ -215,8 +316,44 @@ async function main() {
     }
 
     await fs.writeFile(OUTPUT_PATH, JSON.stringify(results, null, 2) + "\n", "utf8");
-    console.log(`\n${results.length} diocèses écrits dans data/dioceses.json`);
-    console.log(`${updated} mis à jour depuis catholic-hierarchy.org, ${failed} échecs (valeurs conservées).`);
+
+    // --- Résumé exact pour la notification / la PR ---
+    const lines = [];
+    if (realAppointments.length === 0 && realVacancies.length === 0) {
+        lines.push("Aucun changement d'évêque détecté cette semaine.");
+    } else {
+        if (realAppointments.length > 0) {
+            lines.push(`### ${realAppointments.length} nomination(s) détectée(s)`);
+            for (const c of realAppointments) {
+                lines.push(`- **${c.diocese}** : ${c.ancien} → **${c.nouveau}**${c.depuis ? ` (depuis ${c.depuis})` : ""}`);
+            }
+        }
+        if (realVacancies.length > 0) {
+            lines.push(`### ${realVacancies.length} nouveau(x) siège(s) vacant(s)`);
+            for (const v of realVacancies) {
+                lines.push(`- **${v.diocese}** : ${v.ancien} → siège vacant`);
+            }
+        }
+    }
+    if (parseFailures.length > 0) {
+        lines.push("");
+        lines.push(`⚠ ${parseFailures.length} diocèse(s) non parsable(s) cette semaine (valeurs précédentes conservées, à vérifier manuellement) : ${parseFailures.join(", ")}`);
+    }
+    const summary = lines.join("\n") + "\n";
+    await fs.writeFile(SUMMARY_PATH, summary, "utf8");
+
+    console.log(`\n${results.length} diocèses traités, ${fetched} pages récupérées, ${failed} échecs réseau.`);
+    console.log(`${realAppointments.length} vrai(s) changement(s) d'évêque, ${realVacancies.length} nouvelle(s) vacance(s) confirmée(s), ${parseFailures.length} échec(s) de parsing.`);
+
+    // Pour piloter la PR depuis le workflow (titre, "y a-t-il un vrai changement ?")
+    if (process.env.GITHUB_OUTPUT) {
+        const changesCount = realAppointments.length + realVacancies.length;
+        await fs.appendFile(
+            process.env.GITHUB_OUTPUT,
+            `changes_count=${changesCount}\nparse_failures=${parseFailures.length}\n`,
+            "utf8"
+        );
+    }
 }
 
 main().catch(err => {

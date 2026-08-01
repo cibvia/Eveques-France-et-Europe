@@ -28,17 +28,18 @@ jobs:
         run: npm install
 
       - name: Lancer le scraping (catholic-hierarchy.org)
+        id: scrape
         run: npm run update-dioceses
 
       - name: Ouvrir une Pull Request si des changements sont détectés
+        if: steps.scrape.outputs.changes_count != '0'
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "Mise à jour automatique des diocèses (${{ github.run_id }})"
+          commit-message: "Mise à jour automatique des diocèses (${{ steps.scrape.outputs.changes_count }} changement(s))"
           branch: updateDioceses
           delete-branch: true
-          title: "Mise à jour automatique des diocèses — ${{ github.run_id }}"
-          body: |
-            Mise à jour générée automatiquement à partir de catholic-hierarchy.org.
-            Vérifie le diff avant de fusionner (nouveaux évêques, sièges vacants, etc.).
-          add-paths: data/dioceses.json
-          
+          title: "Mise à jour des diocèses — ${{ steps.scrape.outputs.changes_count }} changement(s) d'évêque"
+          body-path: data/update-summary.md
+          add-paths: |
+            data/dioceses.json
+            data/update-summary.md
