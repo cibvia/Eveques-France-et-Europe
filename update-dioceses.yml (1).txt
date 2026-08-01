@@ -1,0 +1,45 @@
+name: Mise à jour automatique des diocèses
+
+on:
+  schedule:
+    # Tous les lundis à 5h du matin (UTC)
+    - cron: "0 5 * * 1"
+  workflow_dispatch: {}
+    # Permet de déclencher la mise à jour manuellement depuis l'onglet
+    # "Actions" du dépôt GitHub, y compris depuis un téléphone.
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-dioceses:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Installer les dépendances
+        run: npm install
+
+      - name: Lancer le scraping (catholic-hierarchy.org)
+        id: scrape
+        run: npm run update-dioceses
+
+      - name: Ouvrir une Pull Request si des changements sont détectés
+        if: steps.scrape.outputs.changes_count != '0'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Mise à jour automatique des diocèses (${{ steps.scrape.outputs.changes_count }} changement(s))"
+          branch: updateDioceses
+          delete-branch: true
+          title: "Mise à jour des diocèses — ${{ steps.scrape.outputs.changes_count }} changement(s) d'évêque"
+          body-path: data/update-summary.md
+          add-paths: |
+            data/dioceses.json
+            data/update-summary.md
