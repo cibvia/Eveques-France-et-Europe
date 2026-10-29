@@ -31,6 +31,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
+import { sameBishop } from "./bishop-names.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const STATIC_PATH = path.join(__dirname, "..", "data", "dioceses-static.json");
@@ -235,36 +236,30 @@ async function main() {
             base.region = info.region ?? base.region;
 
             if (info.parseStatus === "ok" && info.eveque) {
+                const previousBishop = previous?.eveque;
+                const fallbackBishop = entry.eveque_fallback;
+                const samePrevious = sameBishop(previousBishop?.nom, info.eveque.nom);
+                const sameFallback = sameBishop(fallbackBishop?.nom, info.eveque.nom);
+                const knownBishop = samePrevious ? previousBishop : sameFallback ? fallbackBishop : null;
                 base.eveque = {
-                    nom: info.eveque.nom,
+                    nom: knownBishop?.nom ?? info.eveque.nom,
                     titre: info.eveque.titre,
-                    depuis: info.eveque.depuis ?? null,
+                    depuis: info.eveque.depuis ?? knownBishop?.depuis ?? null,
                     // photo et devise ne sont pas disponibles sur catholic-hierarchy.org :
                     // on conserve celles déjà connues si le nom de l'évêque n'a pas changé.
                     photo:
-                        entry.eveque_fallback && entry.eveque_fallback.nom === info.eveque.nom
-                            ? entry.eveque_fallback.photo
-                            : previous?.eveque?.nom === info.eveque.nom
-                                ? previous.eveque.photo
-                                : undefined,
+                        (samePrevious ? previousBishop.photo : undefined) ??
+                        (sameFallback ? fallbackBishop.photo : undefined),
                     devise:
-                        entry.eveque_fallback && entry.eveque_fallback.nom === info.eveque.nom
-                            ? entry.eveque_fallback.devise
-                            : previous?.eveque?.nom === info.eveque.nom
-                                ? previous.eveque.devise
-                                : undefined
+                        (samePrevious ? previousBishop.devise : undefined) ??
+                        (sameFallback ? fallbackBishop.devise : undefined)
                 };
                 delete base.liturgie;
                 console.log(`OK — ${info.eveque.nom}`);
 
                 const previousNom = previous?.eveque?.nom;
-                const previousDepuis = previous?.eveque?.depuis;
-                const isRealChange =
-                    previous !== undefined &&
-                    (previousNom !== info.eveque.nom || previousDepuis !== (info.eveque.depuis ?? null)) &&
-                    !previous?.liturgie?.statut; // ignore les sorties de "vacant" déjà traitées séparément
-                if (previous === undefined || previousNom !== info.eveque.nom) {
-                    if (previousNom && previousNom !== info.eveque.nom) {
+                if (previous === undefined || !samePrevious) {
+                    if (previousNom) {
                         realAppointments.push({
                             id: entry.id,
                             diocese: entry.diocese,

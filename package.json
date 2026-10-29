@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "update-dioceses": "node scripts/update-dioceses.mjs"
+    "update-dioceses": "node scripts/update-dioceses.mjs",
+    "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0"
