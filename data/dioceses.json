@@ -5,6 +5,16 @@
     "diocese": "Archidiocèse de Paris",
     "type": "archidiocèse métropolitain",
     "pays": "France",
+    "province": "Paris",
+    "metropolitain": "Laurent Ulrich",
+    "region": "Ile-de-France",
+    "departements": [
+      "75 - Paris"
+    ],
+    "grandes_villes": [
+      "Paris"
+    ],
+    "site": "https://www.paris.catholique.fr/",
     "eveque": {
       "nom": "Laurent Ulrich",
       "titre": "Archevêque de Paris",
@@ -12,16 +22,6 @@
       "photo": "images/bishops/laurent-ulrich.jpg",
       "devise": "La joie de croire"
     },
-    "province": "Paris",
-    "metropolitain": "Laurent Ulrich",
-    "region": "Île-de-France",
-    "departements": [
-      "75 - Paris"
-    ],
-    "grandes_villes": [
-      "Paris"
-    ],
-    "site": "https://dioceseparis.fr",
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Laurent »"
@@ -33,16 +33,9 @@
     "diocese": "Diocèse de Créteil",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Dominique Blanchet",
-      "titre": "Évêque de Créteil",
-      "depuis": "2021-01-09",
-      "photo": "images/bishops/dominique-blanchet.jpg",
-      "devise": "Seigneur, à qui irions-nous ?"
-    },
     "province": "Paris",
     "metropolitain": "Laurent Ulrich",
-    "region": "Île-de-France",
+    "region": "Ile-de-France",
     "departements": [
       "94 - Val-de-Marne"
     ],
@@ -53,7 +46,14 @@
       "Champigny-sur-Marne",
       "Ivry-sur-Seine"
     ],
-    "site": "https://catholiques-valdemarne.fr",
+    "site": "http://catholiques-val-de-marne.cef.fr/",
+    "eveque": {
+      "nom": "Dominique Blanchet",
+      "titre": "Évêque de Créteil",
+      "depuis": "2021-01-09",
+      "photo": "images/bishops/dominique-blanchet.jpg",
+      "devise": "Seigneur, à qui irions-nous ?"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Dominique »"
@@ -65,16 +65,9 @@
     "diocese": "Diocèse d'Évry-Corbeil-Essonnes",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Michel Pansard",
-      "titre": "Évêque d'Évry-Corbeil-Essonnes",
-      "depuis": "2017-08-01",
-      "photo": "images/bishops/michel-pansard.jpg",
-      "devise": "Jusqu'aux extrémités de la terre"
-    },
     "province": "Paris",
     "metropolitain": "Laurent Ulrich",
-    "region": "Île-de-France",
+    "region": "Ile-de-France",
     "departements": [
       "91 - Essonne"
     ],
@@ -85,7 +78,14 @@
       "Savigny-sur-Orge",
       "Sainte-Geneviève-des-Bois"
     ],
-    "site": "https://evry.catholique.fr",
+    "site": "https://evry.catholique.fr/",
+    "eveque": {
+      "nom": "Michel Pansard",
+      "titre": "Évêque d'Évry-Corbeil-Essonnes",
+      "depuis": "2017-08-01",
+      "photo": "images/bishops/michel-pansard.jpg",
+      "devise": "Jusqu'aux extrémités de la terre"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Michel »"
@@ -97,16 +97,9 @@
     "diocese": "Diocèse de Meaux",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Yves Nahmias",
-      "titre": "Évêque de Meaux",
-      "depuis": "2012-08-09",
-      "photo": "images/bishops/jean-yves-nahmias.jpg",
-      "devise": "L'amour du Christ nous presse"
-    },
     "province": "Paris",
     "metropolitain": "Laurent Ulrich",
-    "region": "Île-de-France",
+    "region": "Ile-de-France",
     "departements": [
       "77 - Seine-et-Marne"
     ],
@@ -117,7 +110,14 @@
       "Pontault-Combault",
       "Fontainebleau"
     ],
-    "site": "https://catho77.fr",
+    "site": "http://catho77.fr/",
+    "eveque": {
+      "nom": "Jean-Yves Nahmias",
+      "titre": "Évêque de Meaux",
+      "depuis": "2012-08-09",
+      "photo": "images/bishops/jean-yves-nahmias.jpg",
+      "devise": "L'amour du Christ nous presse"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Yves »"
@@ -129,16 +129,9 @@
     "diocese": "Diocèse de Nanterre",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Matthieu Rougé",
-      "titre": "Évêque de Nanterre",
-      "depuis": "2018-06-05",
-      "photo": "images/bishops/matthieu-rouge.jpg",
-      "devise": "Non pas à nous, Seigneur, mais à ton nom donne gloire"
-    },
     "province": "Paris",
     "metropolitain": "Laurent Ulrich",
-    "region": "Île-de-France",
+    "region": "Ile-de-France",
     "departements": [
       "92 - Hauts-de-Seine"
     ],
@@ -150,7 +143,14 @@
       "Colombes",
       "Antony"
     ],
-    "site": "https://diocese92.fr",
+    "site": "http://diocese92.fr/",
+    "eveque": {
+      "nom": "Matthieu Rougé",
+      "titre": "Évêque de Nanterre",
+      "depuis": "2018-06-05",
+      "photo": "images/bishops/matthieu-rouge.jpg",
+      "devise": "Non pas à nous, Seigneur, mais à ton nom donne gloire"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Matthieu »"
@@ -162,16 +162,9 @@
     "diocese": "Diocèse de Pontoise",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Benoît Bertrand",
-      "titre": "Évêque de Pontoise",
-      "depuis": "2024-06-04",
-      "photo": "images/bishops/benoit-bertrand.jpg",
-      "devise": "Servir le Seigneur dans la joie"
-    },
     "province": "Paris",
     "metropolitain": "Laurent Ulrich",
-    "region": "Île-de-France",
+    "region": "Ile-de-France",
     "departements": [
       "95 - Val-d'Oise"
     ],
@@ -182,7 +175,14 @@
       "Sarcelles",
       "Garges-lès-Gonesse"
     ],
-    "site": "https://catholique95.fr",
+    "site": "http://www.catholique95.fr/",
+    "eveque": {
+      "nom": "Benoît Bertrand",
+      "titre": "Évêque de Pontoise",
+      "depuis": "2024-06-04",
+      "photo": "images/bishops/benoit-bertrand.jpg",
+      "devise": "Servir le Seigneur dans la joie"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Benoît »"
@@ -194,16 +194,9 @@
     "diocese": "Diocèse de Saint-Denis",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Étienne Guillet",
-      "titre": "Évêque de Saint-Denis",
-      "depuis": "2024-11-15",
-      "photo": "images/bishops/etienne-guillet.jpg",
-      "devise": "Demeurez dans mon amour"
-    },
     "province": "Paris",
     "metropolitain": "Laurent Ulrich",
-    "region": "Île-de-France",
+    "region": "Ile-de-France",
     "departements": [
       "93 - Seine-Saint-Denis"
     ],
@@ -214,7 +207,14 @@
       "Aubervilliers",
       "Drancy"
     ],
-    "site": "https://saint-denis.catholique.fr",
+    "site": "https://saint-denis.catholique.fr/",
+    "eveque": {
+      "nom": "Étienne Guillet",
+      "titre": "Évêque de Saint-Denis",
+      "depuis": "2024-11-15",
+      "photo": "images/bishops/etienne-guillet.jpg",
+      "devise": "Demeurez dans mon amour"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Étienne »"
@@ -226,16 +226,9 @@
     "diocese": "Diocèse de Versailles",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Luc Crepy",
-      "titre": "Évêque de Versailles",
-      "depuis": "2021-02-06",
-      "photo": "images/bishops/luc-crepy.jpg",
-      "devise": "Connaître l'amour du Christ"
-    },
     "province": "Paris",
     "metropolitain": "Laurent Ulrich",
-    "region": "Île-de-France",
+    "region": "Ile-de-France",
     "departements": [
       "78 - Yvelines"
     ],
@@ -246,7 +239,14 @@
       "Saint-Germain-en-Laye",
       "Poissy"
     ],
-    "site": "https://catholique78.fr",
+    "site": "https://www.catholique78.fr/",
+    "eveque": {
+      "nom": "Luc Crepy",
+      "titre": "Évêque de Versailles",
+      "depuis": "2021-02-06",
+      "photo": "images/bishops/luc-crepy.jpg",
+      "devise": "Connaître l'amour du Christ"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Luc »"
@@ -258,16 +258,9 @@
     "diocese": "Archidiocèse de Lyon",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Olivier de Germay",
-      "titre": "Archevêque de Lyon, Primat des Gaules",
-      "depuis": "2020-10-22",
-      "photo": "images/bishops/olivier-de-germay.jpg",
-      "devise": "Pour qu'ils aient la vie"
-    },
     "province": "Lyon",
     "metropolitain": "Olivier de Germay",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "69 - Rhône",
       "42 - Loire (canton de Chazelles)"
@@ -280,6 +273,13 @@
       "Villefranche-sur-Saône"
     ],
     "site": "https://lyon.catholique.fr",
+    "eveque": {
+      "nom": "Olivier de Germay",
+      "titre": "Archevêque de Lyon, Primat des Gaules",
+      "depuis": "2020-10-22",
+      "photo": "images/bishops/olivier-de-germay.jpg",
+      "devise": "Pour qu'ils aient la vie"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Olivier »"
@@ -291,16 +291,9 @@
     "diocese": "Archidiocèse de Chambéry, Maurienne et Tarentaise",
     "type": "archidiocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Thibault Verny",
-      "titre": "Archevêque de Chambéry, Maurienne et Tarentaise",
-      "depuis": "2023-05-11",
-      "photo": "images/bishops/thibault-verny.jpg",
-      "devise": "Si tu savais le don de Dieu"
-    },
     "province": "Lyon",
     "metropolitain": "Olivier de Germay",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "73 - Savoie"
     ],
@@ -311,7 +304,14 @@
       "Saint-Jean-de-Maurienne",
       "Bourg-Saint-Maurice"
     ],
-    "site": "https://catholique-savoie.fr",
+    "site": "https://www.catholique-savoie.fr/",
+    "eveque": {
+      "nom": "Thibault Verny",
+      "titre": "Archevêque de Chambéry, Maurienne et Tarentaise",
+      "depuis": "2023-05-11",
+      "photo": "images/bishops/thibault-verny.jpg",
+      "devise": "Si tu savais le don de Dieu"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Thibault »"
@@ -323,16 +323,9 @@
     "diocese": "Diocèse d'Annecy",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Yves Le Saux",
-      "titre": "Évêque d'Annecy",
-      "depuis": "2022-08-15",
-      "photo": "images/bishops/yves-le-saux.jpg",
-      "devise": "Jésus, j'ai confiance en toi"
-    },
     "province": "Lyon",
     "metropolitain": "Olivier de Germay",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "74 - Haute-Savoie"
     ],
@@ -343,7 +336,14 @@
       "Cluses",
       "Chamonix-Mont-Blanc"
     ],
-    "site": "https://diocese-annecy.fr",
+    "site": "https://www.diocese-annecy.fr/",
+    "eveque": {
+      "nom": "Yves Le Saux",
+      "titre": "Évêque d'Annecy",
+      "depuis": "2022-06-27",
+      "photo": "images/bishops/yves-le-saux.jpg",
+      "devise": "Jésus, j'ai confiance en toi"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Yves »"
@@ -355,16 +355,9 @@
     "diocese": "Diocèse de Belley-Ars",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Pascal Roland",
-      "titre": "Évêque de Belley-Ars",
-      "depuis": "2012-06-15",
-      "photo": "images/bishops/pascal-roland.jpg",
-      "devise": "À cause de Jésus et de l'Évangile"
-    },
     "province": "Lyon",
     "metropolitain": "Olivier de Germay",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "01 - Ain"
     ],
@@ -376,6 +369,13 @@
       "Gex"
     ],
     "site": "https://catholique-belley-ars.fr",
+    "eveque": {
+      "nom": "Pascal Roland",
+      "titre": "Évêque de Belley-Ars",
+      "depuis": "2012-06-15",
+      "photo": "images/bishops/pascal-roland.jpg",
+      "devise": "À cause de Jésus et de l'Évangile"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Pascal »"
@@ -387,16 +387,9 @@
     "diocese": "Diocèse de Grenoble-Vienne",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Marc Eychenne",
-      "titre": "Évêque de Grenoble-Vienne",
-      "depuis": "2022-09-14",
-      "photo": "images/bishops/jean-marc-eychenne.jpg",
-      "devise": "Sur ta parole"
-    },
     "province": "Lyon",
     "metropolitain": "Olivier de Germay",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "38 - Isère"
     ],
@@ -407,7 +400,14 @@
       "Saint-Martin-d'Hères",
       "Voiron"
     ],
-    "site": "https://diocese-grenoble-vienne.fr",
+    "site": "https://www.diocese-grenoble-vienne.fr/",
+    "eveque": {
+      "nom": "Jean-Marc Eychenne",
+      "titre": "Évêque de Grenoble-Vienne",
+      "depuis": "2022-09-14",
+      "photo": "images/bishops/jean-marc-eychenne.jpg",
+      "devise": "Sur ta parole"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Marc »"
@@ -419,16 +419,9 @@
     "diocese": "Diocèse de Saint-Étienne",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Sylvain Bataille",
-      "titre": "Évêque de Saint-Étienne",
-      "depuis": "2016-05-18",
-      "photo": "images/bishops/sylvain-bataille.jpg",
-      "devise": "À la louange de sa gloire"
-    },
     "province": "Lyon",
     "metropolitain": "Olivier de Germay",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "42 - Loire"
     ],
@@ -439,10 +432,9 @@
       "Firminy",
       "Montbrison"
     ],
-    "site": "https://diocese-saintetienne.fr",
+    "site": "http://www.diocese-saintetienne.fr/",
     "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Sylvain »"
+      "statut": "siege_vacant"
     }
   },
   {
@@ -451,16 +443,9 @@
     "diocese": "Diocèse de Valence",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "François Durand",
-      "titre": "Évêque de Valence",
-      "depuis": "2024-01-05",
-      "photo": "images/bishops/francois-durand.jpg",
-      "devise": "Avec vous, chrétien"
-    },
     "province": "Lyon",
     "metropolitain": "Olivier de Germay",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "26 - Drôme"
     ],
@@ -471,7 +456,14 @@
       "Bourg-lès-Valence",
       "Nyons"
     ],
-    "site": "https://valence.catholique.fr",
+    "site": "https://valence.cef.fr/",
+    "eveque": {
+      "nom": "François Durand",
+      "titre": "Évêque de Valence",
+      "depuis": "2024-01-05",
+      "photo": "images/bishops/francois-durand.jpg",
+      "devise": "Avec vous, chrétien"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque François »"
@@ -483,16 +475,9 @@
     "diocese": "Diocèse de Viviers",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Hervé Giraud",
-      "titre": "Évêque de Viviers",
-      "depuis": "2024-03-13",
-      "photo": "images/bishops/herve-giraud.jpg",
-      "devise": "Pour que la vie surabonde"
-    },
     "province": "Lyon",
     "metropolitain": "Olivier de Germay",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "07 - Ardèche"
     ],
@@ -503,7 +488,14 @@
       "Aubenas",
       "Tournon-sur-Rhône"
     ],
-    "site": "https://ardeche.catholique.fr",
+    "site": "https://ardeche.catholique.fr/",
+    "eveque": {
+      "nom": "Hervé Giraud",
+      "titre": "Évêque de Viviers",
+      "depuis": "2024-03-13",
+      "photo": "images/bishops/herve-giraud.jpg",
+      "devise": "Pour que la vie surabonde"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Hervé »"
@@ -515,16 +507,9 @@
     "diocese": "Archidiocèse de Marseille",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Marc Aveline",
-      "titre": "Cardinal archevêque de Marseille",
-      "depuis": "2019-08-08",
-      "photo": "images/bishops/jean-marc-aveline.jpg",
-      "devise": "Que tous soient un"
-    },
     "province": "Marseille",
     "metropolitain": "Jean-Marc Aveline",
-    "region": "Provence-Alpes-Côte d'Azur",
+    "region": "Provence-Méditerranée",
     "departements": [
       "13 - Bouches-du-Rhône (arrondissement de Marseille)"
     ],
@@ -533,7 +518,14 @@
       "Aubagne",
       "La Ciotat"
     ],
-    "site": "https://marseille.catholique.fr",
+    "site": "https://marseille.catholique.fr/",
+    "eveque": {
+      "nom": "Jean-Marc Aveline",
+      "titre": "Cardinal archevêque de Marseille",
+      "depuis": "2019-08-08",
+      "photo": "images/bishops/jean-marc-aveline.jpg",
+      "devise": "Que tous soient un"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Marc »"
@@ -545,16 +537,9 @@
     "diocese": "Archidiocèse d'Aix-en-Provence et Arles",
     "type": "archidiocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Christian Delarbre",
-      "titre": "Archevêque d'Aix-en-Provence et Arles",
-      "depuis": "2022-07-05",
-      "photo": "images/bishops/christian-delarbre.jpg",
-      "devise": "Faites tout ce qu'il vous dira"
-    },
     "province": "Marseille",
     "metropolitain": "Jean-Marc Aveline",
-    "region": "Provence-Alpes-Côte d'Azur",
+    "region": "Provence-Méditerranée",
     "departements": [
       "13 - Bouches-du-Rhône (arrondissements d'Aix, Arles, Istres)"
     ],
@@ -565,7 +550,14 @@
       "Salon-de-Provence",
       "Martigues"
     ],
-    "site": "https://catholique-aix-arles.fr",
+    "site": "http://www.catho-aixarles.fr/",
+    "eveque": {
+      "nom": "Christian Delarbre",
+      "titre": "Archevêque d'Aix-en-Provence et Arles",
+      "depuis": "2022-07-05",
+      "photo": "images/bishops/christian-delarbre.jpg",
+      "devise": "Faites tout ce qu'il vous dira"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Christian »"
@@ -577,16 +569,9 @@
     "diocese": "Archidiocèse d'Avignon",
     "type": "archidiocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "François Fonlupt",
-      "titre": "Archevêque d'Avignon",
-      "depuis": "2021-06-11",
-      "photo": "images/bishops/francois-fonlupt.jpg",
-      "devise": "Restez en moi et moi en vous"
-    },
     "province": "Marseille",
     "metropolitain": "Jean-Marc Aveline",
-    "region": "Provence-Alpes-Côte d'Azur",
+    "region": "Provence-Méditerranée",
     "departements": [
       "84 - Vaucluse"
     ],
@@ -597,7 +582,14 @@
       "Cavaillon",
       "Pertuis"
     ],
-    "site": "https://diocese-avignon.fr",
+    "site": "https://www.diocese-avignon.fr/",
+    "eveque": {
+      "nom": "François Fonlupt",
+      "titre": "Archevêque d'Avignon",
+      "depuis": "2021-06-11",
+      "photo": "images/bishops/francois-fonlupt.jpg",
+      "devise": "Restez en moi et moi en vous"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque François »"
@@ -609,16 +601,9 @@
     "diocese": "Diocèse d'Ajaccio",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "François-Xavier Bustillo",
-      "titre": "Cardinal évêque d'Ajaccio",
-      "depuis": "2021-05-11",
-      "photo": "images/bishops/francois-xavier-bustillo.jpg",
-      "devise": "In ipso vita erat"
-    },
     "province": "Marseille",
     "metropolitain": "Jean-Marc Aveline",
-    "region": "Corse",
+    "region": "Provence-Méditerranée",
     "departements": [
       "2A - Corse-du-Sud",
       "2B - Haute-Corse"
@@ -631,7 +616,14 @@
       "Bonifacio",
       "Calvi"
     ],
-    "site": "https://corse.catholique.fr",
+    "site": "http://www.corse.catholique.fr/",
+    "eveque": {
+      "nom": "François-Xavier Bustillo",
+      "titre": "Cardinal évêque d'Ajaccio",
+      "depuis": "2021-05-11",
+      "photo": "images/bishops/francois-xavier-bustillo.jpg",
+      "devise": "In ipso vita erat"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque François-Xavier »"
@@ -643,16 +635,9 @@
     "diocese": "Diocèse de Digne, Riez et Sisteron",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Emmanuel Gobilliard",
-      "titre": "Évêque de Digne, Riez et Sisteron",
-      "depuis": "2022-10-15",
-      "photo": "images/bishops/emmanuel-gobilliard.jpg",
-      "devise": "Aimez-vous les uns les autres"
-    },
     "province": "Marseille",
     "metropolitain": "Jean-Marc Aveline",
-    "region": "Provence-Alpes-Côte d'Azur",
+    "region": "Provence-Méditerranée",
     "departements": [
       "04 - Alpes-de-Haute-Provence"
     ],
@@ -662,7 +647,14 @@
       "Sisteron",
       "Forcalquier"
     ],
-    "site": "https://catholique-digne.fr",
+    "site": "https://eglise.catholique04.fr/",
+    "eveque": {
+      "nom": "Emmanuel Gobilliard",
+      "titre": "Évêque de Digne, Riez et Sisteron",
+      "depuis": "2022-10-15",
+      "photo": "images/bishops/emmanuel-gobilliard.jpg",
+      "devise": "Aimez-vous les uns les autres"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Emmanuel »"
@@ -674,16 +666,9 @@
     "diocese": "Diocèse de Fréjus-Toulon",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Dominique Rey",
-      "titre": "Évêque de Fréjus-Toulon",
-      "depuis": "2000-05-16",
-      "photo": "images/bishops/dominique-rey.jpg",
-      "devise": "Misericordia et Veritas"
-    },
     "province": "Marseille",
     "metropolitain": "Jean-Marc Aveline",
-    "region": "Provence-Alpes-Côte d'Azur",
+    "region": "Provence-Méditerranée",
     "departements": [
       "83 - Var"
     ],
@@ -694,11 +679,11 @@
       "Hyères",
       "La Seyne-sur-Mer"
     ],
-    "site": "https://frejustoulon.fr",
-    "liturgie": {
-      "particulier": true,
-      "statut": "coadjuteur",
-      "formule": "« ... avec notre évêque Dominique et François son évêque coadjuteur »"
+    "site": "http://www.diocese-frejus-toulon.com/",
+    "eveque": {
+      "nom": "François Touvet",
+      "titre": "Évêque de Fréjus-Toulon",
+      "depuis": "2025-01-07"
     }
   },
   {
@@ -707,16 +692,9 @@
     "diocese": "Diocèse de Gap et Embrun",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Xavier Malle",
-      "titre": "Évêque de Gap et Embrun",
-      "depuis": "2017-04-08",
-      "photo": "images/bishops/xavier-malle.jpg",
-      "devise": "Ayez les mêmes sentiments que le Christ"
-    },
     "province": "Marseille",
     "metropolitain": "Jean-Marc Aveline",
-    "region": "Provence-Alpes-Côte d'Azur",
+    "region": "Provence-Méditerranée",
     "departements": [
       "05 - Hautes-Alpes"
     ],
@@ -725,7 +703,14 @@
       "Briançon",
       "Embrun"
     ],
-    "site": "https://diocesedegap.fr",
+    "site": "https://www.diocesedegap.fr",
+    "eveque": {
+      "nom": "Xavier Malle",
+      "titre": "Évêque de Gap et Embrun",
+      "depuis": "2017-04-08",
+      "photo": "images/bishops/xavier-malle.jpg",
+      "devise": "Ayez les mêmes sentiments que le Christ"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Xavier »"
@@ -737,16 +722,9 @@
     "diocese": "Diocèse de Nice",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Philippe Nault",
-      "titre": "Évêque de Nice",
-      "depuis": "2022-03-09",
-      "photo": "images/bishops/jean-philippe-nault.jpg",
-      "devise": "Testis Christi"
-    },
     "province": "Marseille",
     "metropolitain": "Jean-Marc Aveline",
-    "region": "Provence-Alpes-Côte d'Azur",
+    "region": "Provence-Méditerranée",
     "departements": [
       "06 - Alpes-Maritimes"
     ],
@@ -757,7 +735,14 @@
       "Antibes",
       "Menton"
     ],
-    "site": "https://nice.catholique.fr",
+    "site": "https://nice.catholique.fr/",
+    "eveque": {
+      "nom": "Jean-Philippe Nault",
+      "titre": "Évêque de Nice",
+      "depuis": "2022-03-09",
+      "photo": "images/bishops/jean-philippe-nault.jpg",
+      "devise": "Testis Christi"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Philippe »"
@@ -769,16 +754,9 @@
     "diocese": "Archidiocèse de Bordeaux",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Paul James",
-      "titre": "Archevêque de Bordeaux",
-      "depuis": "2019-11-14",
-      "photo": "images/bishops/jean-paul-james.jpg",
-      "devise": "Resurrexit"
-    },
     "province": "Bordeaux",
     "metropolitain": "Jean-Paul James",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "33 - Gironde"
     ],
@@ -790,7 +768,14 @@
       "Villenave-d'Ornon",
       "Arcachon"
     ],
-    "site": "https://bordeaux.catholique.fr",
+    "site": "https://bordeaux.catholique.fr/",
+    "eveque": {
+      "nom": "Jean-Paul James",
+      "titre": "Archevêque de Bordeaux",
+      "depuis": "2019-11-14",
+      "photo": "images/bishops/jean-paul-james.jpg",
+      "devise": "Resurrexit"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Paul »"
@@ -802,16 +787,9 @@
     "diocese": "Diocèse d'Agen",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Alexandre de Bucy",
-      "titre": "Évêque d'Agen",
-      "depuis": "2024-05-22",
-      "photo": "images/bishops/alexandre-de-bucy.jpg",
-      "devise": "Servir dans l'espérance"
-    },
     "province": "Bordeaux",
     "metropolitain": "Jean-Paul James",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "47 - Lot-et-Garonne"
     ],
@@ -820,7 +798,14 @@
       "Marmande",
       "Villeneuve-sur-Lot"
     ],
-    "site": "https://diocese47.fr",
+    "site": "https://www.diocese47.fr/",
+    "eveque": {
+      "nom": "Alexandre de Bucy",
+      "titre": "Évêque d'Agen",
+      "depuis": "2024-05-22",
+      "photo": "images/bishops/alexandre-de-bucy.jpg",
+      "devise": "Servir dans l'espérance"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Alexandre »"
@@ -832,16 +817,9 @@
     "diocese": "Diocèse d'Aire et Dax",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Nicolas Souchu",
-      "titre": "Évêque d'Aire et Dax",
-      "depuis": "2017-11-15",
-      "photo": "images/bishops/nicolas-souchu.jpg",
-      "devise": "Paix à vous"
-    },
     "province": "Bordeaux",
     "metropolitain": "Jean-Paul James",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "40 - Landes"
     ],
@@ -851,7 +829,14 @@
       "Aire-sur-l'Adour",
       "Biscarrosse"
     ],
-    "site": "https://dax.catholique.fr",
+    "site": "https://diocese40.fr/",
+    "eveque": {
+      "nom": "Nicolas Souchu",
+      "titre": "Évêque d'Aire et Dax",
+      "depuis": "2017-11-15",
+      "photo": "images/bishops/nicolas-souchu.jpg",
+      "devise": "Paix à vous"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Nicolas »"
@@ -863,16 +848,9 @@
     "diocese": "Diocèse de Bayonne, Lescar et Oloron",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Marc Aillet",
-      "titre": "Évêque de Bayonne, Lescar et Oloron",
-      "depuis": "2008-10-15",
-      "photo": "images/bishops/marc-aillet.jpg",
-      "devise": "Sicut qui ministrat"
-    },
     "province": "Bordeaux",
     "metropolitain": "Jean-Paul James",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "64 - Pyrénées-Atlantiques"
     ],
@@ -883,7 +861,14 @@
       "Anglet",
       "Oloron-Sainte-Marie"
     ],
-    "site": "https://diocese64.org",
+    "site": "http://diocese64.org/",
+    "eveque": {
+      "nom": "Marc Aillet",
+      "titre": "Évêque de Bayonne, Lescar et Oloron",
+      "depuis": "2008-10-15",
+      "photo": "images/bishops/marc-aillet.jpg",
+      "devise": "Sicut qui ministrat"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Marc »"
@@ -895,16 +880,9 @@
     "diocese": "Diocèse de Périgueux et Sarlat",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Philippe Mousset",
-      "titre": "Évêque de Périgueux et Sarlat",
-      "depuis": "2014-06-18",
-      "photo": "images/bishops/philippe-mousset.jpg",
-      "devise": "Serviteur du Christ"
-    },
     "province": "Bordeaux",
     "metropolitain": "Jean-Paul James",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "24 - Dordogne"
     ],
@@ -913,7 +891,14 @@
       "Bergerac",
       "Sarlat-la-Canéda"
     ],
-    "site": "https://diocese24.fr",
+    "site": "https://diocese24.fr/",
+    "eveque": {
+      "nom": "Philippe Mousset",
+      "titre": "Évêque de Périgueux et Sarlat",
+      "depuis": "2014-06-18",
+      "photo": "images/bishops/philippe-mousset.jpg",
+      "devise": "Serviteur du Christ"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Philippe »"
@@ -925,16 +910,9 @@
     "diocese": "Archidiocèse de Tours",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Vincent Jordy",
-      "titre": "Archevêque de Tours",
-      "depuis": "2019-11-04",
-      "photo": "images/bishops/vincent-jordy.jpg",
-      "devise": "Faites tout ce qu'il vous dira"
-    },
     "province": "Tours",
     "metropolitain": "Vincent Jordy",
-    "region": "Centre-Val de Loire",
+    "region": "Centre",
     "departements": [
       "37 - Indre-et-Loire"
     ],
@@ -945,7 +923,14 @@
       "Amboise",
       "Loches"
     ],
-    "site": "https://diocese-tours.fr",
+    "site": "http://diocesedetours.catholique.fr/",
+    "eveque": {
+      "nom": "Vincent Jordy",
+      "titre": "Archevêque de Tours",
+      "depuis": "2019-11-04",
+      "photo": "images/bishops/vincent-jordy.jpg",
+      "devise": "Faites tout ce qu'il vous dira"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Vincent »"
@@ -957,16 +942,9 @@
     "diocese": "Diocèse de Blois",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Francis Bestion",
-      "titre": "Évêque de Blois",
-      "depuis": "2024-10-01",
-      "photo": "images/bishops/francis-bestion.jpg",
-      "devise": "Ensemble vers le Christ"
-    },
     "province": "Tours",
     "metropolitain": "Vincent Jordy",
-    "region": "Centre-Val de Loire",
+    "region": "Centre",
     "departements": [
       "41 - Loir-et-Cher"
     ],
@@ -975,7 +953,14 @@
       "Vendôme",
       "Romorantin-Lanthenay"
     ],
-    "site": "https://catholique-blois.net",
+    "site": "https://www.catholique-blois.net/",
+    "eveque": {
+      "nom": "Francis Bestion",
+      "titre": "Évêque de Blois",
+      "depuis": "2024-10-01",
+      "photo": "images/bishops/francis-bestion.jpg",
+      "devise": "Ensemble vers le Christ"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Francis »"
@@ -987,16 +972,9 @@
     "diocese": "Diocèse de Chartres",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Philippe Christory",
-      "titre": "Évêque de Chartres",
-      "depuis": "2018-02-02",
-      "photo": "images/bishops/philippe-christory.jpg",
-      "devise": "Lumen gentium Christus"
-    },
     "province": "Tours",
     "metropolitain": "Vincent Jordy",
-    "region": "Centre-Val de Loire",
+    "region": "Centre",
     "departements": [
       "28 - Eure-et-Loir"
     ],
@@ -1007,7 +985,14 @@
       "Nogent-le-Rotrou",
       "Lucé"
     ],
-    "site": "https://diocese-chartres.com",
+    "site": "https://www.diocese-chartres.com/",
+    "eveque": {
+      "nom": "Philippe Christory",
+      "titre": "Évêque de Chartres",
+      "depuis": "2018-02-02",
+      "photo": "images/bishops/philippe-christory.jpg",
+      "devise": "Lumen gentium Christus"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Philippe »"
@@ -1019,16 +1004,9 @@
     "diocese": "Diocèse d'Orléans",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jacques Blaquart",
-      "titre": "Évêque d'Orléans",
-      "depuis": "2010-07-27",
-      "photo": "images/bishops/jacques-blaquart.jpg",
-      "devise": "Servir le Seigneur dans la joie"
-    },
     "province": "Tours",
     "metropolitain": "Vincent Jordy",
-    "region": "Centre-Val de Loire",
+    "region": "Centre",
     "departements": [
       "45 - Loiret"
     ],
@@ -1039,7 +1017,14 @@
       "Montargis",
       "Gien"
     ],
-    "site": "https://orleans.catholique.fr",
+    "site": "http://www.orleans.catholique.fr/",
+    "eveque": {
+      "nom": "Jacques Blaquart",
+      "titre": "Évêque d'Orléans",
+      "depuis": "2010-07-27",
+      "photo": "images/bishops/jacques-blaquart.jpg",
+      "devise": "Servir le Seigneur dans la joie"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jacques »"
@@ -1051,16 +1036,9 @@
     "diocese": "Archidiocèse de Rennes, Dol et Saint-Malo",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Nicolas Souchu",
-      "titre": "Archevêque de Rennes, Dol et Saint-Malo",
-      "depuis": "2025-01-15",
-      "photo": "images/bishops/nicolas-souchu-rennes.jpg",
-      "devise": "Pax vobis"
-    },
     "province": "Rennes",
     "metropolitain": "Nicolas Souchu",
-    "region": "Bretagne",
+    "region": "Ouest",
     "departements": [
       "35 - Ille-et-Vilaine"
     ],
@@ -1071,10 +1049,11 @@
       "Vitré",
       "Bruz"
     ],
-    "site": "https://rennes.catholique.fr",
-    "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Nicolas »"
+    "site": "https://rennes.catholique.fr/",
+    "eveque": {
+      "nom": "Pierre d’Ornellas",
+      "titre": "Archevêque de Rennes, Dol et Saint-Malo",
+      "depuis": "2007-03-26"
     }
   },
   {
@@ -1083,16 +1062,9 @@
     "diocese": "Diocèse d'Angers",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Emmanuel Delmas",
-      "titre": "Évêque d'Angers",
-      "depuis": "2008-06-17",
-      "photo": "images/bishops/emmanuel-delmas.jpg",
-      "devise": "Faites tout ce qu'il vous dira"
-    },
     "province": "Rennes",
     "metropolitain": "Nicolas Souchu",
-    "region": "Pays de la Loire",
+    "region": "Ouest",
     "departements": [
       "49 - Maine-et-Loire"
     ],
@@ -1102,7 +1074,14 @@
       "Saumur",
       "Sèvremoine"
     ],
-    "site": "https://diocese49.fr",
+    "site": "https://www.diocese49.org",
+    "eveque": {
+      "nom": "Emmanuel Delmas",
+      "titre": "Évêque d'Angers",
+      "depuis": "2008-06-17",
+      "photo": "images/bishops/emmanuel-delmas.jpg",
+      "devise": "Faites tout ce qu'il vous dira"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Emmanuel »"
@@ -1114,16 +1093,9 @@
     "diocese": "Diocèse de Laval",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Matthieu Dupont",
-      "titre": "Évêque de Laval",
-      "depuis": "2024-01-09",
-      "photo": "images/bishops/matthieu-dupont.jpg",
-      "devise": "Remplis de l'Esprit Saint"
-    },
     "province": "Rennes",
     "metropolitain": "Nicolas Souchu",
-    "region": "Pays de la Loire",
+    "region": "Ouest",
     "departements": [
       "53 - Mayenne"
     ],
@@ -1132,7 +1104,14 @@
       "Mayenne",
       "Château-Gontier"
     ],
-    "site": "https://diocese-laval.fr",
+    "site": "https://www.diocesedelaval.fr/",
+    "eveque": {
+      "nom": "Matthieu Dupont",
+      "titre": "Évêque de Laval",
+      "depuis": "2024-01-09",
+      "photo": "images/bishops/matthieu-dupont.jpg",
+      "devise": "Remplis de l'Esprit Saint"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Matthieu »"
@@ -1144,16 +1123,9 @@
     "diocese": "Diocèse du Mans",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Pierre Vuillemin",
-      "titre": "Évêque du Mans",
-      "depuis": "2023-04-03",
-      "photo": "images/bishops/jean-pierre-vuillemin.jpg",
-      "devise": "In caritate veritas"
-    },
     "province": "Rennes",
     "metropolitain": "Nicolas Souchu",
-    "region": "Pays de la Loire",
+    "region": "Ouest",
     "departements": [
       "72 - Sarthe"
     ],
@@ -1162,7 +1134,14 @@
       "La Flèche",
       "Sablé-sur-Sarthe"
     ],
-    "site": "https://diocese-lemans.fr",
+    "site": "http://www.sarthe.catholique.fr/",
+    "eveque": {
+      "nom": "Jean-Pierre Vuillemin",
+      "titre": "Évêque du Mans",
+      "depuis": "2023-04-03",
+      "photo": "images/bishops/jean-pierre-vuillemin.jpg",
+      "devise": "In caritate veritas"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Pierre »"
@@ -1174,16 +1153,9 @@
     "diocese": "Diocèse de Nantes",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Laurent Percerou",
-      "titre": "Évêque de Nantes",
-      "depuis": "2020-08-11",
-      "photo": "images/bishops/laurent-percerou.jpg",
-      "devise": "Ut unum sint"
-    },
     "province": "Rennes",
     "metropolitain": "Nicolas Souchu",
-    "region": "Pays de la Loire",
+    "region": "Ouest",
     "departements": [
       "44 - Loire-Atlantique"
     ],
@@ -1194,7 +1166,14 @@
       "Rezé",
       "Rez-en-Retz"
     ],
-    "site": "https://nantes.catholique.fr",
+    "site": "https://donnons.diocese44.fr",
+    "eveque": {
+      "nom": "Laurent Percerou",
+      "titre": "Évêque de Nantes",
+      "depuis": "2020-08-11",
+      "photo": "images/bishops/laurent-percerou.jpg",
+      "devise": "Ut unum sint"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Laurent »"
@@ -1206,16 +1185,9 @@
     "diocese": "Diocèse de Quimper et Léon",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Laurent Dognin",
-      "titre": "Évêque de Quimper et Léon",
-      "depuis": "2015-05-20",
-      "photo": "images/bishops/laurent-dognin.jpg",
-      "devise": "Pour que le monde croie"
-    },
     "province": "Rennes",
     "metropolitain": "Nicolas Souchu",
-    "region": "Bretagne",
+    "region": "Ouest",
     "departements": [
       "29 - Finistère"
     ],
@@ -1226,7 +1198,14 @@
       "Morlaix",
       "Landerneau"
     ],
-    "site": "https://diocese-quimper.fr",
+    "site": "https://diocese-quimper.fr/",
+    "eveque": {
+      "nom": "Laurent Dognin",
+      "titre": "Évêque de Quimper et Léon",
+      "depuis": "2015-05-20",
+      "photo": "images/bishops/laurent-dognin.jpg",
+      "devise": "Pour que le monde croie"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Laurent »"
@@ -1238,16 +1217,9 @@
     "diocese": "Diocèse de Saint-Brieuc et Tréguier",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Denis Moutel",
-      "titre": "Évêque de Saint-Brieuc et Tréguier",
-      "depuis": "2010-08-20",
-      "photo": "images/bishops/denis-moutel.jpg",
-      "devise": "L'Esprit du Seigneur est sur moi"
-    },
     "province": "Rennes",
     "metropolitain": "Nicolas Souchu",
-    "region": "Bretagne",
+    "region": "Ouest",
     "departements": [
       "22 - Côtes-d'Armor"
     ],
@@ -1258,7 +1230,14 @@
       "Guingamp",
       "Plérin"
     ],
-    "site": "https://saintbrieuc-treguier.catholique.fr",
+    "site": "https://saintbrieuc-treguier.catholique.fr/",
+    "eveque": {
+      "nom": "Denis Moutel",
+      "titre": "Évêque de Saint-Brieuc et Tréguier",
+      "depuis": "2010-08-20",
+      "photo": "images/bishops/denis-moutel.jpg",
+      "devise": "L'Esprit du Seigneur est sur moi"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Denis »"
@@ -1270,16 +1249,9 @@
     "diocese": "Diocèse de Vannes",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Raymond Centène",
-      "titre": "Évêque de Vannes",
-      "depuis": "2005-06-28",
-      "photo": "images/bishops/raymond-centene.jpg",
-      "devise": "Vincere in bono malum"
-    },
     "province": "Rennes",
     "metropolitain": "Nicolas Souchu",
-    "region": "Bretagne",
+    "region": "Ouest",
     "departements": [
       "56 - Morbihan"
     ],
@@ -1290,7 +1262,14 @@
       "Ploemeur",
       "Pontivy"
     ],
-    "site": "https://vannes.catholique.fr",
+    "site": "http://www.vannes.catholique.fr/",
+    "eveque": {
+      "nom": "Raymond Centène",
+      "titre": "Évêque de Vannes",
+      "depuis": "2005-06-28",
+      "photo": "images/bishops/raymond-centene.jpg",
+      "devise": "Vincere in bono malum"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Raymond »"
@@ -1302,16 +1281,9 @@
     "diocese": "Archidiocèse de Toulouse, Saint-Bertrand-de-Comminges et Rieux",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Guy de Kerimel",
-      "titre": "Archevêque de Toulouse",
-      "depuis": "2021-12-09",
-      "photo": "images/bishops/guy-de-kerimel.jpg",
-      "devise": "Demeurez dans mon amour"
-    },
     "province": "Toulouse",
     "metropolitain": "Guy de Kerimel",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "31 - Haute-Garonne"
     ],
@@ -1323,7 +1295,14 @@
       "Muret",
       "Saint-Gaudens"
     ],
-    "site": "https://toulouse.catholique.fr",
+    "site": "http://toulouse.catholique.fr/",
+    "eveque": {
+      "nom": "Guy de Kerimel",
+      "titre": "Archevêque de Toulouse",
+      "depuis": "2021-12-09",
+      "photo": "images/bishops/guy-de-kerimel.jpg",
+      "devise": "Demeurez dans mon amour"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Guy »"
@@ -1335,16 +1314,9 @@
     "diocese": "Archidiocèse d'Albi, Castres et Lavaur",
     "type": "archidiocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Louis Balsa",
-      "titre": "Archevêque d'Albi, Castres et Lavaur",
-      "depuis": "2023-08-18",
-      "photo": "images/bishops/jean-louis-balsa.jpg",
-      "devise": "Que tous soient un"
-    },
     "province": "Toulouse",
     "metropolitain": "Guy de Kerimel",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "81 - Tarn"
     ],
@@ -1355,7 +1327,14 @@
       "Graulhet",
       "Lavaur"
     ],
-    "site": "https://albi.catholique.fr",
+    "site": "http://albi.catholique.fr/",
+    "eveque": {
+      "nom": "Jean-Louis Balsa",
+      "titre": "Archevêque d'Albi, Castres et Lavaur",
+      "depuis": "2023-08-18",
+      "photo": "images/bishops/jean-louis-balsa.jpg",
+      "devise": "Que tous soient un"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Louis »"
@@ -1367,16 +1346,9 @@
     "diocese": "Archidiocèse d'Auch, Condom, Lectoure et Lombez",
     "type": "archidiocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Bertrand Lacombe",
-      "titre": "Archevêque d'Auch",
-      "depuis": "2020-10-22",
-      "photo": "images/bishops/bertrand-lacombe.jpg",
-      "devise": "Que votre joie soit parfaite"
-    },
     "province": "Toulouse",
     "metropolitain": "Guy de Kerimel",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "32 - Gers"
     ],
@@ -1386,7 +1358,14 @@
       "Fleurance",
       "Lectoure"
     ],
-    "site": "https://diocese32.fr",
+    "site": "http://auch.catholique.fr/",
+    "eveque": {
+      "nom": "Bertrand Lacombe",
+      "titre": "Archevêque d'Auch",
+      "depuis": "2020-10-22",
+      "photo": "images/bishops/bertrand-lacombe.jpg",
+      "devise": "Que votre joie soit parfaite"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Bertrand »"
@@ -1398,16 +1377,9 @@
     "diocese": "Diocèse de Cahors",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Laurent Camiade",
-      "titre": "Évêque de Cahors",
-      "depuis": "2015-07-15",
-      "photo": "images/bishops/laurent-camiade.jpg",
-      "devise": "Jésus se rapprocha, et il marchait avec eux"
-    },
     "province": "Toulouse",
     "metropolitain": "Guy de Kerimel",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "46 - Lot"
     ],
@@ -1417,7 +1389,14 @@
       "Gourdon",
       "Rocamadour"
     ],
-    "site": "https://diocesedecahors.fr",
+    "site": "https://www.cahors.catholique.fr/",
+    "eveque": {
+      "nom": "Laurent Camiade",
+      "titre": "Évêque de Cahors",
+      "depuis": "2015-07-15",
+      "photo": "images/bishops/laurent-camiade.jpg",
+      "devise": "Jésus se rapprocha, et il marchait avec eux"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Laurent »"
@@ -1429,16 +1408,9 @@
     "diocese": "Diocèse de Montauban",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Alain Guellec",
-      "titre": "Évêque de Montauban",
-      "depuis": "2022-10-29",
-      "photo": "images/bishops/alain-guellec.jpg",
-      "devise": "Unies à ta prière"
-    },
     "province": "Toulouse",
     "metropolitain": "Guy de Kerimel",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "82 - Tarn-et-Garonne"
     ],
@@ -1447,7 +1419,14 @@
       "Castelsarrasin",
       "Moissac"
     ],
-    "site": "https://catholique-montauban.fr",
+    "site": "http://catholique-montauban.cef.fr/",
+    "eveque": {
+      "nom": "Alain Guellec",
+      "titre": "Évêque de Montauban",
+      "depuis": "2022-10-29",
+      "photo": "images/bishops/alain-guellec.jpg",
+      "devise": "Unies à ta prière"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Alain »"
@@ -1459,16 +1438,9 @@
     "diocese": "Diocèse de Pamiers, Couserans et Mirepoix",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Benoît Gschwind",
-      "titre": "Évêque de Pamiers",
-      "depuis": "2023-10-28",
-      "photo": "images/bishops/benoit-gschwind.jpg",
-      "devise": "Demeurez dans mon amour"
-    },
     "province": "Toulouse",
     "metropolitain": "Guy de Kerimel",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "09 - Ariège"
     ],
@@ -1479,6 +1451,13 @@
       "Mirepoix"
     ],
     "site": "https://ariege-catholique.fr",
+    "eveque": {
+      "nom": "Benoît Gschwind",
+      "titre": "Évêque de Pamiers",
+      "depuis": "2023-10-28",
+      "photo": "images/bishops/benoit-gschwind.jpg",
+      "devise": "Demeurez dans mon amour"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Benoît »"
@@ -1490,16 +1469,9 @@
     "diocese": "Diocèse de Rodez et Vabres",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Luc Meyer",
-      "titre": "Évêque de Rodez et Vabres",
-      "depuis": "2022-07-07",
-      "photo": "images/bishops/luc-meyer.jpg",
-      "devise": "L'Esprit donne la vie"
-    },
     "province": "Toulouse",
     "metropolitain": "Guy de Kerimel",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "12 - Aveyron"
     ],
@@ -1509,7 +1481,14 @@
       "Villefranche-de-Rouergue",
       "Onet-le-Château"
     ],
-    "site": "https://rodez.catholique.fr",
+    "site": "http://rodez.catholique.fr/",
+    "eveque": {
+      "nom": "Luc Meyer",
+      "titre": "Évêque de Rodez et Vabres",
+      "depuis": "2022-07-07",
+      "photo": "images/bishops/luc-meyer.jpg",
+      "devise": "L'Esprit donne la vie"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Luc »"
@@ -1521,16 +1500,9 @@
     "diocese": "Diocèse de Tarbes et Lourdes",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Marc Micas",
-      "titre": "Évêque de Tarbes et Lourdes",
-      "depuis": "2022-03-30",
-      "photo": "images/bishops/jean-marc-micas.jpg",
-      "devise": "Faites tout ce qu'il vous dira"
-    },
     "province": "Toulouse",
     "metropolitain": "Guy de Kerimel",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "65 - Hautes-Pyrénées"
     ],
@@ -1539,7 +1511,14 @@
       "Lourdes",
       "Bagnères-de-Bigorre"
     ],
-    "site": "https://tarbeslourdes.catholique.fr",
+    "site": "http://www.catholique65.fr/",
+    "eveque": {
+      "nom": "Jean-Marc Micas",
+      "titre": "Évêque de Tarbes et Lourdes",
+      "depuis": "2022-03-30",
+      "photo": "images/bishops/jean-marc-micas.jpg",
+      "devise": "Faites tout ce qu'il vous dira"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Marc »"
@@ -1551,16 +1530,9 @@
     "diocese": "Archidiocèse de Reims",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Éric de Moulins-Beaufort",
-      "titre": "Archevêque de Reims",
-      "depuis": "2018-08-18",
-      "photo": "images/bishops/eric-de-moulins-beaufort.jpg",
-      "devise": "Sicut ovis reductus"
-    },
     "province": "Reims",
     "metropolitain": "Éric de Moulins-Beaufort",
-    "region": "Grand Est",
+    "region": "Nord",
     "departements": [
       "51 - Marne (arrondissement de Reims)",
       "08 - Ardennes"
@@ -1571,7 +1543,14 @@
       "Sedan",
       "Rethel"
     ],
-    "site": "https://reims.catholique.fr",
+    "site": "http://www.catholique-reims.fr/",
+    "eveque": {
+      "nom": "Éric de Moulins-Beaufort",
+      "titre": "Archevêque de Reims",
+      "depuis": "2018-08-18",
+      "photo": "images/bishops/eric-de-moulins-beaufort.jpg",
+      "devise": "Sicut ovis reductus"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Éric »"
@@ -1583,16 +1562,9 @@
     "diocese": "Diocèse d'Amiens",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Gérard Le Stang",
-      "titre": "Évêque d'Amiens",
-      "depuis": "2021-03-20",
-      "photo": "images/bishops/gerard-le-stang.jpg",
-      "devise": "Allez donc, de toutes les nations faites des disciples"
-    },
     "province": "Reims",
     "metropolitain": "Éric de Moulins-Beaufort",
-    "region": "Hauts-de-France",
+    "region": "Nord",
     "departements": [
       "80 - Somme"
     ],
@@ -1602,7 +1574,14 @@
       "Albert",
       "Péronne"
     ],
-    "site": "https://amiens.catholique.fr",
+    "site": "http://www.amiens.catholique.fr/",
+    "eveque": {
+      "nom": "Gérard Le Stang",
+      "titre": "Évêque d'Amiens",
+      "depuis": "2021-03-20",
+      "photo": "images/bishops/gerard-le-stang.jpg",
+      "devise": "Allez donc, de toutes les nations faites des disciples"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Gérard »"
@@ -1614,16 +1593,9 @@
     "diocese": "Diocèse de Beauvais, Noyon et Senlis",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jacques Habert",
-      "titre": "Évêque de Beauvais, Noyon et Senlis",
-      "depuis": "2020-11-10",
-      "photo": "images/bishops/jacques-habert.jpg",
-      "devise": "Demeurez dans mon amour"
-    },
     "province": "Reims",
     "metropolitain": "Éric de Moulins-Beaufort",
-    "region": "Hauts-de-France",
+    "region": "Nord",
     "departements": [
       "60 - Oise"
     ],
@@ -1634,10 +1606,11 @@
       "Senlis",
       "Noyon"
     ],
-    "site": "https://oise.catholique.fr",
-    "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Jacques »"
+    "site": "https://oise.catholique.fr/",
+    "eveque": {
+      "nom": "Jacques Benoit-Gonnin",
+      "titre": "Évêque de Beauvais, Noyon et Senlis",
+      "depuis": "2010-03-18"
     }
   },
   {
@@ -1646,10 +1619,9 @@
     "diocese": "Diocèse de Châlons-en-Champagne",
     "type": "diocèse",
     "pays": "France",
-    "eveque": null,
     "province": "Reims",
     "metropolitain": "Éric de Moulins-Beaufort",
-    "region": "Grand Est",
+    "region": "Nord",
     "departements": [
       "51 - Marne (arrondissements de Châlons, Épernay, Vitry)"
     ],
@@ -1658,12 +1630,11 @@
       "Épernay",
       "Vitry-le-François"
     ],
-    "site": "https://chalons.catholique.fr",
-    "liturgie": {
-      "particulier": true,
-      "statut": "siege_vacant",
-      "administrateur": null,
-      "formule": "Siège vacant : Omettre la mention de l'évêque dans la Prière eucharistique."
+    "site": "http://chalons.catholique.fr/",
+    "eveque": {
+      "nom": "Franck Javary",
+      "titre": "Évêque de Châlons-en-Champagne",
+      "depuis": "2025-01-09"
     }
   },
   {
@@ -1672,16 +1643,9 @@
     "diocese": "Diocèse de Langres",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Joseph de Metz-Noblat",
-      "titre": "Évêque de Langres",
-      "depuis": "2014-01-21",
-      "photo": "images/bishops/joseph-de-metz-noblat.jpg",
-      "devise": "In spe gaudentes"
-    },
     "province": "Reims",
     "metropolitain": "Éric de Moulins-Beaufort",
-    "region": "Grand Est",
+    "region": "Nord",
     "departements": [
       "52 - Haute-Marne"
     ],
@@ -1690,10 +1654,9 @@
       "Chaumont",
       "Saint-Dizier"
     ],
-    "site": "https://52.catholique.fr",
+    "site": "https://52.catholique.fr/",
     "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Joseph »"
+      "statut": "siege_vacant"
     }
   },
   {
@@ -1702,16 +1665,9 @@
     "diocese": "Diocèse de Soissons, Laon et Saint-Quentin",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Renaud de Dinechin",
-      "titre": "Évêque de Soissons, Laon et Saint-Quentin",
-      "depuis": "2015-10-30",
-      "photo": "images/bishops/renaud-de-dinechin.jpg",
-      "devise": "Spes non confundit"
-    },
     "province": "Reims",
     "metropolitain": "Éric de Moulins-Beaufort",
-    "region": "Hauts-de-France",
+    "region": "Nord",
     "departements": [
       "02 - Aisne"
     ],
@@ -1721,10 +1677,9 @@
       "Laon",
       "Château-Thierry"
     ],
-    "site": "https://soissons.catholique.fr",
+    "site": "http://www.soissons.catholique.fr/",
     "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Renaud »"
+      "statut": "siege_vacant"
     }
   },
   {
@@ -1733,16 +1688,9 @@
     "diocese": "Diocèse de Troyes",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Alexandre Joly",
-      "titre": "Évêque de Troyes",
-      "depuis": "2021-12-11",
-      "photo": "images/bishops/alexandre-joly.jpg",
-      "devise": "Fais briller sur nous ton visage"
-    },
     "province": "Reims",
     "metropolitain": "Éric de Moulins-Beaufort",
-    "region": "Grand Est",
+    "region": "Nord",
     "departements": [
       "10 - Aube"
     ],
@@ -1751,7 +1699,14 @@
       "Romilly-sur-Seine",
       "La Chapelle-Saint-Luc"
     ],
-    "site": "https://catholique-troyes.fr",
+    "site": "https://www.cathotroyes.fr/",
+    "eveque": {
+      "nom": "Alexandre Joly",
+      "titre": "Évêque de Troyes",
+      "depuis": "2021-12-11",
+      "photo": "images/bishops/alexandre-joly.jpg",
+      "devise": "Fais briller sur nous ton visage"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Alexandre »"
@@ -1763,16 +1718,9 @@
     "diocese": "Archidiocèse de Lille",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Laurent Le Boulc'h",
-      "titre": "Archevêque de Lille",
-      "depuis": "2023-04-01",
-      "photo": "images/bishops/laurent-le-boulch.jpg",
-      "devise": "Que tous soient un"
-    },
     "province": "Lille",
     "metropolitain": "Laurent Le Boulc'h",
-    "region": "Hauts-de-France",
+    "region": "Nord",
     "departements": [
       "59 - Nord (arrondissements de Lille et Dunkerque)"
     ],
@@ -1783,7 +1731,14 @@
       "Dunkerque",
       "Villeneuve-d'Ascq"
     ],
-    "site": "https://lille.catholique.fr",
+    "site": "https://lille.catholique.fr/",
+    "eveque": {
+      "nom": "Laurent Le Boulc'h",
+      "titre": "Archevêque de Lille",
+      "depuis": "2023-04-01",
+      "photo": "images/bishops/laurent-le-boulch.jpg",
+      "devise": "Que tous soient un"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Laurent »"
@@ -1795,16 +1750,9 @@
     "diocese": "Archidiocèse de Cambrai",
     "type": "archidiocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Vincent Dollmann",
-      "titre": "Archevêque de Cambrai",
-      "depuis": "2018-05-25",
-      "photo": "images/bishops/vincent-dollmann.jpg",
-      "devise": "Demeurez dans mon amour"
-    },
     "province": "Lille",
     "metropolitain": "Laurent Le Boulc'h",
-    "region": "Hauts-de-France",
+    "region": "Nord",
     "departements": [
       "59 - Nord (arrondissements de Cambrai, Douai, Avesnes, Valenciennes)"
     ],
@@ -1815,7 +1763,14 @@
       "Maubeuge",
       "Avesnes-sur-Helpe"
     ],
-    "site": "https://cathocambrai.com",
+    "site": "https://www.cathocambrai.com/",
+    "eveque": {
+      "nom": "Vincent Dollmann",
+      "titre": "Archevêque de Cambrai",
+      "depuis": "2018-08-15",
+      "photo": "images/bishops/vincent-dollmann.jpg",
+      "devise": "Demeurez dans mon amour"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Vincent »"
@@ -1827,16 +1782,9 @@
     "diocese": "Diocèse d'Arras, Boulogne et Saint-Omer",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Olivier Leborgne",
-      "titre": "Évêque d'Arras",
-      "depuis": "2020-09-04",
-      "photo": "images/bishops/olivier-leborgne.jpg",
-      "devise": "Serviteur de la joie"
-    },
     "province": "Lille",
     "metropolitain": "Laurent Le Boulc'h",
-    "region": "Hauts-de-France",
+    "region": "Nord",
     "departements": [
       "62 - Pas-de-Calais"
     ],
@@ -1848,7 +1796,14 @@
       "Saint-Omer",
       "Béthune"
     ],
-    "site": "https://arras.catholique.fr",
+    "site": "http://arras.catholique.fr/",
+    "eveque": {
+      "nom": "Olivier Leborgne",
+      "titre": "Évêque d'Arras",
+      "depuis": "2020-09-04",
+      "photo": "images/bishops/olivier-leborgne.jpg",
+      "devise": "Serviteur de la joie"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Olivier »"
@@ -1860,16 +1815,9 @@
     "diocese": "Archidiocèse de Rouen",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Dominique Lebrun",
-      "titre": "Archevêque de Rouen, Primat de Normandie",
-      "depuis": "2015-07-10",
-      "photo": "images/bishops/dominique-lebrun.jpg",
-      "devise": "Miséricordieux comme le Père"
-    },
     "province": "Rouen",
     "metropolitain": "Dominique Lebrun",
-    "region": "Normandie",
+    "region": "Nord",
     "departements": [
       "76 - Seine-Maritime (arrondissements de Rouen et Dieppe)"
     ],
@@ -1879,7 +1827,14 @@
       "Sotteville-lès-Rouen",
       "Saint-Étienne-du-Rouvray"
     ],
-    "site": "https://rouen.catholique.fr",
+    "site": "http://rouen.catholique.fr/",
+    "eveque": {
+      "nom": "Dominique Lebrun",
+      "titre": "Archevêque de Rouen, Primat de Normandie",
+      "depuis": "2015-07-10",
+      "photo": "images/bishops/dominique-lebrun.jpg",
+      "devise": "Miséricordieux comme le Père"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Dominique »"
@@ -1891,10 +1846,9 @@
     "diocese": "Diocèse de Bayeux et Lisieux",
     "type": "diocèse",
     "pays": "France",
-    "eveque": null,
     "province": "Rouen",
     "metropolitain": "Dominique Lebrun",
-    "region": "Normandie",
+    "region": "Ouest",
     "departements": [
       "14 - Calvados"
     ],
@@ -1905,12 +1859,11 @@
       "Vire",
       "Hérouville-Saint-Clair"
     ],
-    "site": "https://bayeuxlisieux.catholique.fr",
-    "liturgie": {
-      "particulier": true,
-      "statut": "siege_vacant",
-      "administrateur": null,
-      "formule": "Siège vacant : Omettre la mention de l'évêque dans la Prière eucharistique."
+    "site": "http://bayeuxlisieux.catholique.fr/",
+    "eveque": {
+      "nom": "Jacques Habert",
+      "titre": "Évêque de Bayeux et Lisieux",
+      "depuis": "2020-11-10"
     }
   },
   {
@@ -1919,16 +1872,9 @@
     "diocese": "Diocèse de Coutances et Avranches",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Grégoire Cador",
-      "titre": "Évêque de Coutances et Avranches",
-      "depuis": "2023-08-05",
-      "photo": "images/bishops/gregoire-cador.jpg",
-      "devise": "Servir dans l'espérance"
-    },
     "province": "Rouen",
     "metropolitain": "Dominique Lebrun",
-    "region": "Normandie",
+    "region": "Ouest",
     "departements": [
       "50 - Manche"
     ],
@@ -1939,7 +1885,14 @@
       "Avranches",
       "Granville"
     ],
-    "site": "https://diocese50.fr",
+    "site": "http://www.coutances.catholique.fr/",
+    "eveque": {
+      "nom": "Grégoire Cador",
+      "titre": "Évêque de Coutances et Avranches",
+      "depuis": "2023-08-05",
+      "photo": "images/bishops/gregoire-cador.jpg",
+      "devise": "Servir dans l'espérance"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Grégoire »"
@@ -1951,16 +1904,9 @@
     "diocese": "Diocèse d'Évreux",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Olivier de Cagny",
-      "titre": "Évêque d'Évreux",
-      "depuis": "2023-06-02",
-      "photo": "images/bishops/olivier-de-cagny.jpg",
-      "devise": "Pour que la joie du Christ soit en vous"
-    },
     "province": "Rouen",
     "metropolitain": "Dominique Lebrun",
-    "region": "Normandie",
+    "region": "Nord",
     "departements": [
       "27 - Eure"
     ],
@@ -1971,7 +1917,14 @@
       "Val-de-Reuil",
       "Bernay"
     ],
-    "site": "https://evreux.catholique.fr",
+    "site": "https://evreux.catholique.fr/",
+    "eveque": {
+      "nom": "Olivier de Cagny",
+      "titre": "Évêque d'Évreux",
+      "depuis": "2023-06-02",
+      "photo": "images/bishops/olivier-de-cagny.jpg",
+      "devise": "Pour que la joie du Christ soit en vous"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Olivier »"
@@ -1983,16 +1936,9 @@
     "diocese": "Diocèse du Havre",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Luc Brunin",
-      "titre": "Évêque du Havre",
-      "depuis": "2011-06-24",
-      "photo": "images/bishops/jean-luc-brunin.jpg",
-      "devise": "Pour que l'homme vive"
-    },
     "province": "Rouen",
     "metropolitain": "Dominique Lebrun",
-    "region": "Normandie",
+    "region": "Nord",
     "departements": [
       "76 - Seine-Maritime (arrondissement du Havre)"
     ],
@@ -2002,7 +1948,14 @@
       "Montivilliers",
       "Bolbec"
     ],
-    "site": "https://lehavre.catholique.fr",
+    "site": "https://www.lehavre.catholique.fr/",
+    "eveque": {
+      "nom": "Jean-Luc Brunin",
+      "titre": "Évêque du Havre",
+      "depuis": "2011-06-24",
+      "photo": "images/bishops/jean-luc-brunin.jpg",
+      "devise": "Pour que l'homme vive"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Luc »"
@@ -2014,16 +1967,9 @@
     "diocese": "Diocèse de Séez",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Bruno Feillet",
-      "titre": "Évêque de Séez",
-      "depuis": "2021-07-17",
-      "photo": "images/bishops/bruno-feillet.jpg",
-      "devise": "Dieu est plus grand que notre cœur"
-    },
     "province": "Rouen",
     "metropolitain": "Dominique Lebrun",
-    "region": "Normandie",
+    "region": "Ouest",
     "departements": [
       "61 - Orne"
     ],
@@ -2034,7 +1980,14 @@
       "Argentan",
       "L'Aigle"
     ],
-    "site": "https://diocesedeseez.org",
+    "site": "http://www.orne.catholique.fr/",
+    "eveque": {
+      "nom": "Bruno Feillet",
+      "titre": "Évêque de Séez",
+      "depuis": "2021-07-17",
+      "photo": "images/bishops/bruno-feillet.jpg",
+      "devise": "Dieu est plus grand que notre cœur"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Bruno »"
@@ -2046,16 +1999,9 @@
     "diocese": "Archidiocèse de Besançon",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Luc Bouilleret",
-      "titre": "Archevêque de Besançon",
-      "depuis": "2013-10-10",
-      "photo": "images/bishops/jean-luc-bouilleret.jpg",
-      "devise": "Évangéliser dans la joie"
-    },
     "province": "Besançon",
     "metropolitain": "Jean-Luc Bouilleret",
-    "region": "Bourgogne-Franche-Comté",
+    "region": "Est",
     "departements": [
       "25 - Doubs",
       "70 - Haute-Saône"
@@ -2067,7 +2013,14 @@
       "Lure",
       "Gray"
     ],
-    "site": "https://diocese-besancon.fr",
+    "site": "http://besancon.mondio16.com/",
+    "eveque": {
+      "nom": "Jean-Luc Bouilleret",
+      "titre": "Archevêque de Besançon",
+      "depuis": "2013-10-10",
+      "photo": "images/bishops/jean-luc-bouilleret.jpg",
+      "devise": "Évangéliser dans la joie"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Luc »"
@@ -2079,16 +2032,9 @@
     "diocese": "Diocèse de Belfort-Montbéliard",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Denis Jachiet",
-      "titre": "Évêque de Belfort-Montbéliard",
-      "depuis": "2021-10-02",
-      "photo": "images/bishops/denis-jachiet.jpg",
-      "devise": "La gloire de Dieu, c'est l'homme vivant"
-    },
     "province": "Besançon",
     "metropolitain": "Jean-Luc Bouilleret",
-    "region": "Bourgogne-Franche-Comté",
+    "region": "Est",
     "departements": [
       "90 - Territoire de Belfort",
       "25 - Doubs (Pays de Montbéliard)"
@@ -2098,7 +2044,14 @@
       "Montbéliard",
       "Delle"
     ],
-    "site": "https://diocese-belfort-montbeliard.fr",
+    "site": "https://www.diocese-belfort-montbeliard.fr",
+    "eveque": {
+      "nom": "Denis Jachiet",
+      "titre": "Évêque de Belfort-Montbéliard",
+      "depuis": "2021-10-02",
+      "photo": "images/bishops/denis-jachiet.jpg",
+      "devise": "La gloire de Dieu, c'est l'homme vivant"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Denis »"
@@ -2110,16 +2063,9 @@
     "diocese": "Diocèse de Saint-Claude",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Luc Garin",
-      "titre": "Évêque de Saint-Claude",
-      "depuis": "2020-12-10",
-      "photo": "images/bishops/jean-luc-garin.jpg",
-      "devise": "Il fait du neuf"
-    },
     "province": "Besançon",
     "metropolitain": "Jean-Luc Bouilleret",
-    "region": "Bourgogne-Franche-Comté",
+    "region": "Est",
     "departements": [
       "39 - Jura"
     ],
@@ -2129,7 +2075,14 @@
       "Saint-Claude",
       "Champagnole"
     ],
-    "site": "https://eglisejura.com",
+    "site": "https://www.eglisejura.com",
+    "eveque": {
+      "nom": "Jean-Luc Garin",
+      "titre": "Évêque de Saint-Claude",
+      "depuis": "2020-12-10",
+      "photo": "images/bishops/jean-luc-garin.jpg",
+      "devise": "Il fait du neuf"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Luc »"
@@ -2141,10 +2094,9 @@
     "diocese": "Diocèse de Saint-Dié",
     "type": "diocèse",
     "pays": "France",
-    "eveque": null,
     "province": "Besançon",
     "metropolitain": "Jean-Luc Bouilleret",
-    "region": "Grand Est",
+    "region": "Est",
     "departements": [
       "88 - Vosges"
     ],
@@ -2154,12 +2106,11 @@
       "Gérardmer",
       "Remiremont"
     ],
-    "site": "https://catholique88.fr",
-    "liturgie": {
-      "particulier": true,
-      "statut": "siege_vacant",
-      "administrateur": null,
-      "formule": "Siège vacant : Omettre la mention de l'évêque dans la Prière eucharistique."
+    "site": "https://www.catholique88.fr/",
+    "eveque": {
+      "nom": "François Gourdon",
+      "titre": "Évêque de Saint-Dié",
+      "depuis": "2025-02-20"
     }
   },
   {
@@ -2168,16 +2119,9 @@
     "diocese": "Diocèse de Verdun",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Paul Gusching",
-      "titre": "Évêque de Verdun",
-      "depuis": "2014-07-03",
-      "photo": "images/bishops/jean-paul-gusching.jpg",
-      "devise": "Rendre témoignage à la lumière"
-    },
     "province": "Besançon",
     "metropolitain": "Jean-Luc Bouilleret",
-    "region": "Grand Est",
+    "region": "Est",
     "departements": [
       "55 - Meuse"
     ],
@@ -2186,10 +2130,11 @@
       "Bar-le-Duc",
       "Commercy"
     ],
-    "site": "https://catholique-verdun.fr",
-    "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Jean-Paul »"
+    "site": "https://catholique-verdun.cef.fr",
+    "eveque": {
+      "nom": "Joseph de Metz-Noblat",
+      "titre": "Évêque de Verdun",
+      "depuis": "2026-04-11"
     }
   },
   {
@@ -2198,16 +2143,9 @@
     "diocese": "Diocèse de Nancy et Toul",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Pierre-Yves Michel",
-      "titre": "Évêque de Nancy et Toul",
-      "depuis": "2023-04-06",
-      "photo": "images/bishops/pierre-yves-michel.jpg",
-      "devise": "Serviteur du Christ"
-    },
     "province": "Besançon",
     "metropolitain": "Jean-Luc Bouilleret",
-    "region": "Grand Est",
+    "region": "Est",
     "departements": [
       "54 - Meurthe-et-Moselle"
     ],
@@ -2218,7 +2156,14 @@
       "Lunéville",
       "Pont-à-Mousson"
     ],
-    "site": "https://catholique-nancy.fr",
+    "site": "https://www.catholique-nancy.fr/",
+    "eveque": {
+      "nom": "Pierre-Yves Michel",
+      "titre": "Évêque de Nancy et Toul",
+      "depuis": "2023-04-06",
+      "photo": "images/bishops/pierre-yves-michel.jpg",
+      "devise": "Serviteur du Christ"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Pierre-Yves »"
@@ -2230,16 +2175,9 @@
     "diocese": "Archidiocèse de Dijon",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Antoine Hérouard",
-      "titre": "Archevêque de Dijon",
-      "depuis": "2022-02-11",
-      "photo": "images/bishops/antoine-herouard.jpg",
-      "devise": "Que votre amour grandisse encore"
-    },
     "province": "Dijon",
     "metropolitain": "Antoine Hérouard",
-    "region": "Bourgogne-Franche-Comté",
+    "region": "Est",
     "departements": [
       "21 - Côte-d'Or"
     ],
@@ -2250,7 +2188,14 @@
       "Talant",
       "Montbard"
     ],
-    "site": "https://diocese-dijon.net",
+    "site": "http://www.diocese-dijon.com/",
+    "eveque": {
+      "nom": "Antoine Hérouard",
+      "titre": "Archevêque de Dijon",
+      "depuis": "2022-02-11",
+      "photo": "images/bishops/antoine-herouard.jpg",
+      "devise": "Que votre amour grandisse encore"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Antoine »"
@@ -2262,16 +2207,9 @@
     "diocese": "Archidiocèse de Sens",
     "type": "archidiocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Pascal Wintzer",
-      "titre": "Archevêque de Sens et Auxerre",
-      "depuis": "2024-08-06",
-      "photo": "images/bishops/pascal-wintzer.jpg",
-      "devise": "Pour que le monde croie"
-    },
     "province": "Dijon",
     "metropolitain": "Antoine Hérouard",
-    "region": "Bourgogne-Franche-Comté",
+    "region": "Centre",
     "departements": [
       "89 - Yonne"
     ],
@@ -2281,7 +2219,14 @@
       "Joigny",
       "Avallon"
     ],
-    "site": "https://www.yonne.catholique.fr",
+    "site": "http://www.yonne.catholique.fr/",
+    "eveque": {
+      "nom": "Pascal Wintzer",
+      "titre": "Archevêque de Sens et Auxerre",
+      "depuis": "2024-08-06",
+      "photo": "images/bishops/pascal-wintzer.jpg",
+      "devise": "Pour que le monde croie"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Pascal »"
@@ -2293,16 +2238,9 @@
     "diocese": "Diocèse d'Autun, Chalon et Mâcon",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Benoît Rivière",
-      "titre": "Évêque d'Autun, Chalon et Mâcon",
-      "depuis": "2006-04-08",
-      "photo": "images/bishops/benoit-riviere.jpg",
-      "devise": "Gratias agamus Domino"
-    },
     "province": "Dijon",
     "metropolitain": "Antoine Hérouard",
-    "region": "Bourgogne-Franche-Comté",
+    "region": "Centre-Est",
     "departements": [
       "71 - Saône-et-Loire"
     ],
@@ -2314,6 +2252,13 @@
       "Montceau-les-Mines"
     ],
     "site": "https://autun.catholique.fr",
+    "eveque": {
+      "nom": "Benoît Rivière",
+      "titre": "Évêque d'Autun, Chalon et Mâcon",
+      "depuis": "2006-04-08",
+      "photo": "images/bishops/benoit-riviere.jpg",
+      "devise": "Gratias agamus Domino"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Benoît »"
@@ -2325,16 +2270,9 @@
     "diocese": "Diocèse de Nevers",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Grégoire Drouot",
-      "titre": "Évêque de Nevers",
-      "depuis": "2024-03-16",
-      "photo": "images/bishops/gregoire-drouot.jpg",
-      "devise": "Faites tout ce qu'il vous dira"
-    },
     "province": "Dijon",
     "metropolitain": "Antoine Hérouard",
-    "region": "Bourgogne-Franche-Comté",
+    "region": "Centre",
     "departements": [
       "58 - Nièvre"
     ],
@@ -2344,7 +2282,14 @@
       "Varennes-Vauzelles",
       "Decize"
     ],
-    "site": "https://nievre.catholique.fr",
+    "site": "https://www.nievre.catholique.fr/",
+    "eveque": {
+      "nom": "Grégoire Drouot",
+      "titre": "Évêque de Nevers",
+      "depuis": "2024-03-16",
+      "photo": "images/bishops/gregoire-drouot.jpg",
+      "devise": "Faites tout ce qu'il vous dira"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Grégoire »"
@@ -2356,13 +2301,6 @@
     "diocese": "Prélature de la Mission de France",
     "type": "prélature territoriale",
     "pays": "France",
-    "eveque": {
-      "nom": "Antoine Hérouard",
-      "titre": "Prélat de la Mission de France",
-      "depuis": "2022-02-11",
-      "photo": "images/bishops/antoine-herouard.jpg",
-      "devise": "Que votre amour grandisse encore"
-    },
     "province": "Dijon",
     "metropolitain": "Antoine Hérouard",
     "region": "Bourgogne-Franche-Comté",
@@ -2372,7 +2310,14 @@
     "grandes_villes": [
       "Pontigny"
     ],
-    "site": "https://missiondefrance.fr",
+    "site": "http://missiondefrance.fr/",
+    "eveque": {
+      "nom": "Antoine Hérouard",
+      "titre": "Prélat de la Mission de France",
+      "depuis": "2022-02-11",
+      "photo": "images/bishops/antoine-herouard.jpg",
+      "devise": "Que votre amour grandisse encore"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Antoine »"
@@ -2384,16 +2329,9 @@
     "diocese": "Archidiocèse de Clermont",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "François Kalist",
-      "titre": "Archevêque de Clermont",
-      "depuis": "2016-09-20",
-      "photo": "images/bishops/francois-kalist.jpg",
-      "devise": "Ut unum sint"
-    },
     "province": "Clermont",
     "metropolitain": "François Kalist",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "63 - Puy-de-Dôme"
     ],
@@ -2404,7 +2342,14 @@
       "Thiers",
       "Issoire"
     ],
-    "site": "https://clermont.catholique.fr",
+    "site": "http://clermont.catholique.fr/",
+    "eveque": {
+      "nom": "François Kalist",
+      "titre": "Archevêque de Clermont",
+      "depuis": "2016-09-20",
+      "photo": "images/bishops/francois-kalist.jpg",
+      "devise": "Ut unum sint"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque François »"
@@ -2416,16 +2361,9 @@
     "diocese": "Diocèse du Puy-en-Velay",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Yves Baumgarten",
-      "titre": "Évêque du Puy-en-Velay",
-      "depuis": "2022-02-16",
-      "photo": "images/bishops/yves-baumgarten.jpg",
-      "devise": "Fermes dans la foi"
-    },
     "province": "Clermont",
     "metropolitain": "François Kalist",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre-Est",
     "departements": [
       "43 - Haute-Loire"
     ],
@@ -2435,7 +2373,14 @@
       "Yssingeaux",
       "Brioude"
     ],
-    "site": "https://catholique-lepuy.fr",
+    "site": "http://www.catholique-lepuy.fr/",
+    "eveque": {
+      "nom": "Yves Baumgarten",
+      "titre": "Évêque du Puy-en-Velay",
+      "depuis": "2022-02-16",
+      "photo": "images/bishops/yves-baumgarten.jpg",
+      "devise": "Fermes dans la foi"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Yves »"
@@ -2447,16 +2392,9 @@
     "diocese": "Diocèse de Moulins",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Marc Beaumont",
-      "titre": "Évêque de Moulins",
-      "depuis": "2021-03-29",
-      "photo": "images/bishops/marc-beaumont.jpg",
-      "devise": "À cause de ta parole"
-    },
     "province": "Clermont",
     "metropolitain": "François Kalist",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Centre",
     "departements": [
       "03 - Allier"
     ],
@@ -2466,7 +2404,14 @@
       "Montluçon",
       "Yzeure"
     ],
-    "site": "https://catholique-moulins.fr",
+    "site": "https://www.catholique-moulins.fr",
+    "eveque": {
+      "nom": "Marc Beaumont",
+      "titre": "Évêque de Moulins",
+      "depuis": "2021-03-29",
+      "photo": "images/bishops/marc-beaumont.jpg",
+      "devise": "À cause de ta parole"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Marc »"
@@ -2478,16 +2423,9 @@
     "diocese": "Diocèse de Saint-Flour",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Didier Noblot",
-      "titre": "Évêque de Saint-Flour",
-      "depuis": "2021-06-11",
-      "photo": "images/bishops/didier-noblot.jpg",
-      "devise": "Marchez dans la charité"
-    },
     "province": "Clermont",
     "metropolitain": "François Kalist",
-    "region": "Auvergne-Rhône-Alpes",
+    "region": "Midi",
     "departements": [
       "15 - Cantal"
     ],
@@ -2496,7 +2434,14 @@
       "Aurillac",
       "Mauriac"
     ],
-    "site": "https://catholique-cantal.fr",
+    "site": "https://www.diocese15.fr/",
+    "eveque": {
+      "nom": "Didier Noblot",
+      "titre": "Évêque de Saint-Flour",
+      "depuis": "2021-06-11",
+      "photo": "images/bishops/didier-noblot.jpg",
+      "devise": "Marchez dans la charité"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Didier »"
@@ -2508,16 +2453,9 @@
     "diocese": "Archidiocèse de Montpellier",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Norbert Turini",
-      "titre": "Archevêque de Montpellier",
-      "depuis": "2022-07-09",
-      "photo": "images/bishops/norbert-turini.jpg",
-      "devise": "Aimer et servir"
-    },
     "province": "Montpellier",
     "metropolitain": "Norbert Turini",
-    "region": "Occitanie",
+    "region": "Provence-Méditerranée",
     "departements": [
       "34 - Hérault"
     ],
@@ -2529,7 +2467,14 @@
       "Lunel",
       "Lodève"
     ],
-    "site": "https://montpellier.catholique.fr",
+    "site": "https://montpellier.catholique.fr/",
+    "eveque": {
+      "nom": "Norbert Turini",
+      "titre": "Archevêque de Montpellier",
+      "depuis": "2022-07-09",
+      "photo": "images/bishops/norbert-turini.jpg",
+      "devise": "Aimer et servir"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Norbert »"
@@ -2541,16 +2486,9 @@
     "diocese": "Diocèse de Carcassonne et Narbonne",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Bruno Valentin",
-      "titre": "Évêque de Carcassonne et Narbonne",
-      "depuis": "2023-03-31",
-      "photo": "images/bishops/bruno-valentin.jpg",
-      "devise": "Il fait du neuf"
-    },
     "province": "Montpellier",
     "metropolitain": "Norbert Turini",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "11 - Aude"
     ],
@@ -2560,7 +2498,14 @@
       "Limoux",
       "Castelnaudary"
     ],
-    "site": "https://carcassonne.catholique.fr",
+    "site": "https://www.aude.catholique.fr/",
+    "eveque": {
+      "nom": "Bruno Valentin",
+      "titre": "Évêque de Carcassonne et Narbonne",
+      "depuis": "2023-03-31",
+      "photo": "images/bishops/bruno-valentin.jpg",
+      "devise": "Il fait du neuf"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Bruno »"
@@ -2572,16 +2517,9 @@
     "diocese": "Diocèse de Nîmes, Uzès et Alès",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Nicolas Brouwet",
-      "titre": "Évêque de Nîmes, Uzès et Alès",
-      "depuis": "2021-08-10",
-      "photo": "images/bishops/nicolas-brouwet.jpg",
-      "devise": "Misericordia eius"
-    },
     "province": "Montpellier",
     "metropolitain": "Norbert Turini",
-    "region": "Occitanie",
+    "region": "Provence-Méditerranée",
     "departements": [
       "30 - Gard"
     ],
@@ -2592,7 +2530,14 @@
       "Uzès",
       "Vauvert"
     ],
-    "site": "https://nimes-catholique.fr",
+    "site": "http://nimes-catholique.fr/",
+    "eveque": {
+      "nom": "Nicolas Brouwet",
+      "titre": "Évêque de Nîmes, Uzès et Alès",
+      "depuis": "2021-08-10",
+      "photo": "images/bishops/nicolas-brouwet.jpg",
+      "devise": "Misericordia eius"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Nicolas »"
@@ -2604,16 +2549,9 @@
     "diocese": "Diocèse de Perpignan-Elne",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Thierry Scherrer",
-      "titre": "Évêque de Perpignan-Elne",
-      "depuis": "2023-04-11",
-      "photo": "images/bishops/thierry-scherrer.jpg",
-      "devise": "Testis Christi"
-    },
     "province": "Montpellier",
     "metropolitain": "Norbert Turini",
-    "region": "Occitanie",
+    "region": "Midi",
     "departements": [
       "66 - Pyrénées-Orientales"
     ],
@@ -2623,7 +2561,14 @@
       "Saint-Estève",
       "Elne"
     ],
-    "site": "https://perpignan.catholique.fr",
+    "site": "http://www.perpignan.catholique.fr/",
+    "eveque": {
+      "nom": "Thierry Scherrer",
+      "titre": "Évêque de Perpignan-Elne",
+      "depuis": "2023-04-11",
+      "photo": "images/bishops/thierry-scherrer.jpg",
+      "devise": "Testis Christi"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Thierry »"
@@ -2635,10 +2580,9 @@
     "diocese": "Diocèse de Mende",
     "type": "diocèse",
     "pays": "France",
-    "eveque": null,
     "province": "Montpellier",
     "metropolitain": "Norbert Turini",
-    "region": "Occitanie",
+    "region": "Provence-Méditerranée",
     "departements": [
       "48 - Lozère"
     ],
@@ -2647,12 +2591,11 @@
       "Marvejols",
       "Saint-Chély-d'Apcher"
     ],
-    "site": "https://mende.catholique.fr",
-    "liturgie": {
-      "particulier": true,
-      "statut": "siege_vacant",
-      "administrateur": null,
-      "formule": "Siège vacant : Omettre la mention de l'évêque dans la Prière eucharistique."
+    "site": "https://www.diocese-mende.fr/",
+    "eveque": {
+      "nom": "Jean Pelletier",
+      "titre": "Évêque de Mende",
+      "depuis": "2025-05-20"
     }
   },
   {
@@ -2661,16 +2604,9 @@
     "diocese": "Archidiocèse de Poitiers",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Pascal Wintzer",
-      "titre": "Archevêque de Poitiers",
-      "depuis": "2012-01-13",
-      "photo": "images/bishops/pascal-wintzer.jpg",
-      "devise": "Pour que le monde croie"
-    },
     "province": "Poitiers",
     "metropolitain": "Pascal Wintzer",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "86 - Vienne",
       "79 - Deux-Sèvres"
@@ -2682,10 +2618,11 @@
       "Bressuire",
       "Parthenay"
     ],
-    "site": "https://poitiers.catholique.fr",
-    "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Pascal »"
+    "site": "http://www.poitiers.catholique.fr/",
+    "eveque": {
+      "nom": "Jérôme Beau",
+      "titre": "Archevêque de Poitiers",
+      "depuis": "2025-01-14"
     }
   },
   {
@@ -2694,10 +2631,9 @@
     "diocese": "Archidiocèse de Bourges",
     "type": "archidiocèse",
     "pays": "France",
-    "eveque": null,
     "province": "Poitiers",
     "metropolitain": "Pascal Wintzer",
-    "region": "Centre-Val de Loire",
+    "region": "Centre",
     "departements": [
       "18 - Cher",
       "36 - Indre"
@@ -2709,12 +2645,11 @@
       "Issoudun",
       "Saint-Amand-Montrond"
     ],
-    "site": "https://diocese-bourges.org",
-    "liturgie": {
-      "particulier": true,
-      "statut": "siege_vacant",
-      "administrateur": null,
-      "formule": "Siège vacant : Omettre la mention de l'évêque dans la Prière eucharistique."
+    "site": "https://www.diocese-bourges.org/",
+    "eveque": {
+      "nom": "Sylvain Bataille",
+      "titre": "Archevêque de Bourges",
+      "depuis": "2025-10-16"
     }
   },
   {
@@ -2723,16 +2658,9 @@
     "diocese": "Diocèse d'Angoulême",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Hervé Gosselin",
-      "titre": "Évêque d'Angoulême",
-      "depuis": "2015-11-09",
-      "photo": "images/bishops/herve-gosselin.jpg",
-      "devise": "Demeurez dans mon amour"
-    },
     "province": "Poitiers",
     "metropolitain": "Pascal Wintzer",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "16 - Charente"
     ],
@@ -2742,7 +2670,14 @@
       "Soyaux",
       "Ruelle-sur-Touvre"
     ],
-    "site": "https://charente.catholique.fr",
+    "site": "http://angouleme.catholique.fr/",
+    "eveque": {
+      "nom": "Hervé Gosselin",
+      "titre": "Évêque d'Angoulême",
+      "depuis": "2015-11-09",
+      "photo": "images/bishops/herve-gosselin.jpg",
+      "devise": "Demeurez dans mon amour"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Hervé »"
@@ -2754,16 +2689,9 @@
     "diocese": "Diocèse de La Rochelle et Saintes",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Georges Colomb",
-      "titre": "Évêque de La Rochelle et Saintes",
-      "depuis": "2016-03-09",
-      "photo": "images/bishops/georges-colomb.jpg",
-      "devise": "Que votre lumière brille"
-    },
     "province": "Poitiers",
     "metropolitain": "Pascal Wintzer",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "17 - Charente-Maritime",
       "975 - Saint-Pierre-et-Miquelon"
@@ -2775,7 +2703,14 @@
       "Royan",
       "Saint-Pierre"
     ],
-    "site": "https://catholique17.fr",
+    "site": "https://www.catholiques17.fr/",
+    "eveque": {
+      "nom": "Georges Colomb",
+      "titre": "Évêque de La Rochelle et Saintes",
+      "depuis": "2016-03-09",
+      "photo": "images/bishops/georges-colomb.jpg",
+      "devise": "Que votre lumière brille"
+    },
     "liturgie": {
       "particulier": true,
       "statut": "admin_apostolique",
@@ -2789,16 +2724,9 @@
     "diocese": "Diocèse de Limoges",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Pierre-Antoine Bozo",
-      "titre": "Évêque de Limoges",
-      "depuis": "2017-05-11",
-      "photo": "images/bishops/pierre-antoine-bozo.jpg",
-      "devise": "Demeurez en moi"
-    },
     "province": "Poitiers",
     "metropolitain": "Pascal Wintzer",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "87 - Haute-Vienne",
       "23 - Creuse"
@@ -2809,10 +2737,11 @@
       "Saint-Junien",
       "Panazol"
     ],
-    "site": "https://diocese-limoges.fr",
-    "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Pierre-Antoine »"
+    "site": "https://www.diocese-limoges.fr",
+    "eveque": {
+      "nom": "Benoît Aubert",
+      "titre": "Évêque de Limoges",
+      "depuis": "2026-04-08"
     }
   },
   {
@@ -2821,16 +2750,9 @@
     "diocese": "Diocèse de Luçon",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "François Jacolin",
-      "titre": "Évêque de Luçon",
-      "depuis": "2018-05-29",
-      "photo": "images/bishops/francois-jacolin.jpg",
-      "devise": "Par la grâce de Dieu"
-    },
     "province": "Poitiers",
     "metropolitain": "Pascal Wintzer",
-    "region": "Pays de la Loire",
+    "region": "Ouest",
     "departements": [
       "85 - Vendée"
     ],
@@ -2841,10 +2763,11 @@
       "Challans",
       "Fontenay-le-Comte"
     ],
-    "site": "https://ven.catholique.fr",
-    "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque François »"
+    "site": "http://vendee.catholique.fr/",
+    "eveque": {
+      "nom": "Renauld de Dinechin",
+      "titre": "Évêque de Luçon",
+      "depuis": "2025-09-16"
     }
   },
   {
@@ -2853,10 +2776,9 @@
     "diocese": "Diocèse de Tulle",
     "type": "diocèse",
     "pays": "France",
-    "eveque": null,
     "province": "Poitiers",
     "metropolitain": "Pascal Wintzer",
-    "region": "Nouvelle-Aquitaine",
+    "region": "Sud-Ouest",
     "departements": [
       "19 - Corrèze"
     ],
@@ -2865,12 +2787,11 @@
       "Brive-la-Gaillarde",
       "Ussel"
     ],
-    "site": "https://diocese-tulle.org",
-    "liturgie": {
-      "particulier": true,
-      "statut": "siege_vacant",
-      "administrateur": null,
-      "formule": "Siège vacant : Omettre la mention de l'évêque dans la Prière eucharistique."
+    "site": "https://www.correze.catholique.fr/",
+    "eveque": {
+      "nom": "Éric Bidot",
+      "titre": "Évêque de Tulle",
+      "depuis": "2025-04-15"
     }
   },
   {
@@ -2879,16 +2800,9 @@
     "diocese": "Archidiocèse de Strasbourg",
     "type": "archidiocèse (immédiatement soumis au Saint-Siège)",
     "pays": "France",
-    "eveque": {
-      "nom": "Pascal Delannoy",
-      "titre": "Archevêque de Strasbourg",
-      "depuis": "2024-02-28",
-      "photo": "images/bishops/pascal-delannoy.jpg",
-      "devise": "Avec vous, chrétien, pour vous, évêque"
-    },
     "province": "Alsace (Soumis au Saint-Siège)",
     "metropolitain": "Pascal Delannoy",
-    "region": "Grand Est",
+    "region": "Est",
     "departements": [
       "67 - Bas-Rhin",
       "68 - Haut-Rhin"
@@ -2901,7 +2815,14 @@
       "Schiltigheim",
       "Illkirch-Graffenstaden"
     ],
-    "site": "https://alsace.catholique.fr",
+    "site": "https://www.alsace.catholique.fr/",
+    "eveque": {
+      "nom": "Pascal Delannoy",
+      "titre": "Archevêque de Strasbourg",
+      "depuis": "2024-02-28",
+      "photo": "images/bishops/pascal-delannoy.jpg",
+      "devise": "Avec vous, chrétien, pour vous, évêque"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Pascal »"
@@ -2913,16 +2834,9 @@
     "diocese": "Diocèse de Metz",
     "type": "diocèse (immédiatement soumis au Saint-Siège)",
     "pays": "France",
-    "eveque": {
-      "nom": "Philippe Ballot",
-      "titre": "Évêque de Metz",
-      "depuis": "2022-07-23",
-      "photo": "images/bishops/philippe-ballot.jpg",
-      "devise": "Pour que la vie surabonde"
-    },
     "province": "Moselle (Soumis au Saint-Siège)",
     "metropolitain": "Philippe Ballot",
-    "region": "Grand Est",
+    "region": "Est",
     "departements": [
       "57 - Moselle"
     ],
@@ -2933,7 +2847,14 @@
       "Sarreguemines",
       "Forbach"
     ],
-    "site": "https://metz.catholique.fr",
+    "site": "http://metz.catholique.fr/",
+    "eveque": {
+      "nom": "Philippe Ballot",
+      "titre": "Évêque de Metz",
+      "depuis": "2022-07-23",
+      "photo": "images/bishops/philippe-ballot.jpg",
+      "devise": "Pour que la vie surabonde"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Philippe »"
@@ -2945,13 +2866,6 @@
     "diocese": "Diocèse aux Armées françaises",
     "type": "ordinariat militaire",
     "pays": "France",
-    "eveque": {
-      "nom": "Antoine de Romanet",
-      "titre": "Évêque aux Armées",
-      "depuis": "2017-06-28",
-      "photo": "images/bishops/antoine-de-romanet.jpg",
-      "devise": "Servir"
-    },
     "province": "Armées",
     "metropolitain": "Antoine de Romanet",
     "region": "National",
@@ -2964,7 +2878,14 @@
       "Camp de de Mailly",
       "Bases de défense"
     ],
-    "site": "https://dioceseauxarmees.fr",
+    "site": "https://dioceseauxarmees.fr/",
+    "eveque": {
+      "nom": "Antoine de Romanet",
+      "titre": "Évêque aux Armées",
+      "depuis": "2017-06-28",
+      "photo": "images/bishops/antoine-de-romanet.jpg",
+      "devise": "Servir"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Antoine »"
@@ -2976,13 +2897,6 @@
     "diocese": "Ordinariat des catholiques des rites orientaux en France",
     "type": "ordinariat oriental",
     "pays": "France",
-    "eveque": {
-      "nom": "Laurent Ulrich",
-      "titre": "Ordinair des catholiques orientaux en France",
-      "depuis": "2022-05-23",
-      "photo": "images/bishops/laurent-ulrich.jpg",
-      "devise": "La joie de croire"
-    },
     "province": "Rites orientaux",
     "metropolitain": "Laurent Ulrich",
     "region": "National",
@@ -2995,6 +2909,13 @@
       "Marseille"
     ],
     "site": "https://ordinariat.fr",
+    "eveque": {
+      "nom": "Laurent Ulrich",
+      "titre": "Ordinair des catholiques orientaux en France",
+      "depuis": "2022-05-23",
+      "photo": "images/bishops/laurent-ulrich.jpg",
+      "devise": "La joie de croire"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Laurent »"
@@ -3006,13 +2927,6 @@
     "diocese": "Éparchie Saint-Vladimir-le-Grand de Paris des Ukrainiens",
     "type": "éparchie",
     "pays": "France",
-    "eveque": {
-      "nom": "Hlib Lonchyna",
-      "titre": "Administrateur apostolique de l'Éparchie Saint-Vladimir-le-Grand",
-      "depuis": "2019-02-18",
-      "photo": "images/bishops/hlib-lonchyna.jpg",
-      "devise": "Dominus illuminatio mea"
-    },
     "province": "Rite gréco-catholique ukrainien",
     "metropolitain": "Hlib Lonchyna",
     "region": "National",
@@ -3025,10 +2939,10 @@
       "Lille"
     ],
     "site": "https://ugcc.fr",
-    "liturgie": {
-      "particulier": true,
-      "statut": "admin_apostolique",
-      "formule": "« ... avec Hlib, notre administrateur apostolique »"
+    "eveque": {
+      "nom": "Ihor Rantsya",
+      "titre": "Éparque de l’éparchie Saint-Vladimir-le-Grand de Paris des Ukrainiens",
+      "depuis": "2025-10-01"
     }
   },
   {
@@ -3037,13 +2951,6 @@
     "diocese": "Éparchie Sainte-Croix-de-Paris des Arméniens",
     "type": "éparchie",
     "pays": "France",
-    "eveque": {
-      "nom": "Élie Yeghiayan",
-      "titre": "Éparque de Sainte-Croix-de-Paris des Arméniens",
-      "depuis": "2018-06-23",
-      "photo": "images/bishops/elie-yeghiayan.jpg",
-      "devise": "In cruce salus"
-    },
     "province": "Rite arménien catholique",
     "metropolitain": "Élie Yeghiayan",
     "region": "National",
@@ -3057,6 +2964,13 @@
       "Arnouville"
     ],
     "site": "https://armenienne.catholique.fr",
+    "eveque": {
+      "nom": "Élie Yeghiayan",
+      "titre": "Éparque de Sainte-Croix-de-Paris des Arméniens",
+      "depuis": "2018-06-23",
+      "photo": "images/bishops/elie-yeghiayan.jpg",
+      "devise": "In cruce salus"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Élie »"
@@ -3068,13 +2982,6 @@
     "diocese": "Archidiocèse de Fort-de-France",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "David Macaire",
-      "titre": "Archevêque de Fort-de-France",
-      "depuis": "2015-03-07",
-      "photo": "images/bishops/david-macaire.jpg",
-      "devise": "Veritas in caritate"
-    },
     "province": "Fort-de-France (Antilles-Guyane)",
     "metropolitain": "David Macaire",
     "region": "Martinique",
@@ -3088,7 +2995,14 @@
       "Schoelcher",
       "Saint-Pierre"
     ],
-    "site": "https://martinique.catholique.fr",
+    "site": "https://martinique.catholique.fr/",
+    "eveque": {
+      "nom": "David Macaire",
+      "titre": "Archevêque de Fort-de-France",
+      "depuis": "2015-03-07",
+      "photo": "images/bishops/david-macaire.jpg",
+      "devise": "Veritas in caritate"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque David »"
@@ -3100,13 +3014,6 @@
     "diocese": "Diocèse de Basse-Terre et Pointe-à-Pitre",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Philippe Guiougou",
-      "titre": "Évêque de Basse-Terre et Pointe-à-Pitre",
-      "depuis": "2023-04-03",
-      "photo": "images/bishops/philippe-guiougou.jpg",
-      "devise": "Marcher ensemble dans l'espérance"
-    },
     "province": "Fort-de-France (Antilles-Guyane)",
     "metropolitain": "David Macaire",
     "region": "Guadeloupe",
@@ -3123,7 +3030,14 @@
       "Marigot",
       "Gustavia"
     ],
-    "site": "https://guadeloupe.catholique.fr",
+    "site": "https://catholique-guadeloupe.fr/",
+    "eveque": {
+      "nom": "Philippe Guiougou",
+      "titre": "Évêque de Basse-Terre et Pointe-à-Pitre",
+      "depuis": "2023-04-03",
+      "photo": "images/bishops/philippe-guiougou.jpg",
+      "devise": "Marcher ensemble dans l'espérance"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Philippe »"
@@ -3135,13 +3049,6 @@
     "diocese": "Diocèse de Cayenne",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Alain Ransay",
-      "titre": "Évêque de Cayenne",
-      "depuis": "2021-12-10",
-      "photo": "images/bishops/alain-ransay.jpg",
-      "devise": "Aimez-vous les uns les autres"
-    },
     "province": "Fort-de-France (Antilles-Guyane)",
     "metropolitain": "David Macaire",
     "region": "Guyane",
@@ -3154,7 +3061,14 @@
       "Saint-Laurent-du-Maroni",
       "Kourou"
     ],
-    "site": "https://guyane.catholique.fr",
+    "site": "https://www.guyane.catholique.fr",
+    "eveque": {
+      "nom": "Alain Ransay",
+      "titre": "Évêque de Cayenne",
+      "depuis": "2021-12-10",
+      "photo": "images/bishops/alain-ransay.jpg",
+      "devise": "Aimez-vous les uns les autres"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Alain »"
@@ -3166,13 +3080,6 @@
     "diocese": "Diocèse de Saint-Denis de La Réunion",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Pascal Chane-Teng",
-      "titre": "Évêque de Saint-Denis de La Réunion",
-      "depuis": "2023-07-19",
-      "photo": "images/bishops/pascal-chane-teng.jpg",
-      "devise": "Faites tout ce qu'il vous dira"
-    },
     "province": "Océan Indien (Soumis au Saint-Siège)",
     "metropolitain": "Pascal Chane-Teng",
     "region": "La Réunion",
@@ -3186,7 +3093,14 @@
       "Le Tampon",
       "Saint-André"
     ],
-    "site": "https://reunion.catholique.fr",
+    "site": "https://www.eglisealareunion.org",
+    "eveque": {
+      "nom": "Pascal Chane-Teng",
+      "titre": "Évêque de Saint-Denis de La Réunion",
+      "depuis": "2023-07-19",
+      "photo": "images/bishops/pascal-chane-teng.jpg",
+      "devise": "Faites tout ce qu'il vous dira"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Pascal »"
@@ -3198,13 +3112,6 @@
     "diocese": "Archidiocèse de Papeete",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Jean-Pierre Cottanceau",
-      "titre": "Archevêque de Papeete",
-      "depuis": "2016-12-15",
-      "photo": "images/bishops/jean-pierre-cottanceau.jpg",
-      "devise": "Deus caritas est"
-    },
     "province": "Papeete",
     "metropolitain": "Jean-Pierre Cottanceau",
     "region": "Polynésie française",
@@ -3217,7 +3124,14 @@
       "Punaauia",
       "Bora-Bora"
     ],
-    "site": "https://diocesedepapeete.com",
+    "site": "https://www.catholic.pf",
+    "eveque": {
+      "nom": "Jean-Pierre Cottanceau",
+      "titre": "Archevêque de Papeete",
+      "depuis": "2016-12-15",
+      "photo": "images/bishops/jean-pierre-cottanceau.jpg",
+      "devise": "Deus caritas est"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Jean-Pierre »"
@@ -3229,13 +3143,6 @@
     "diocese": "Diocèse de Taiohae",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Pascal Chang-Soi",
-      "titre": "Évêque de Taiohae (Îles Marquises)",
-      "depuis": "2015-09-05",
-      "photo": "images/bishops/pascal-chang-soi.jpg",
-      "devise": "In verbo tuo"
-    },
     "province": "Papeete",
     "metropolitain": "Jean-Pierre Cottanceau",
     "region": "Polynésie française",
@@ -3248,6 +3155,13 @@
       "Hiva Oa"
     ],
     "site": "https://marquises.catholique.fr",
+    "eveque": {
+      "nom": "Pascal Chang-Soi",
+      "titre": "Évêque de Taiohae (Îles Marquises)",
+      "depuis": "2015-09-05",
+      "photo": "images/bishops/pascal-chang-soi.jpg",
+      "devise": "In verbo tuo"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Pascal »"
@@ -3259,13 +3173,6 @@
     "diocese": "Archidiocèse de Nouméa",
     "type": "archidiocèse métropolitain",
     "pays": "France",
-    "eveque": {
-      "nom": "Michel-Marie Calvet",
-      "titre": "Archevêque de Nouméa",
-      "depuis": "1981-06-19",
-      "photo": "images/bishops/michel-marie-calvet.jpg",
-      "devise": "In fide Christi"
-    },
     "province": "Nouméa",
     "metropolitain": "Michel-Marie Calvet",
     "region": "Nouvelle-Calédonie",
@@ -3278,10 +3185,11 @@
       "Dumbéa",
       "Païta"
     ],
-    "site": "https://dnc.nc",
-    "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Michel-Marie »"
+    "site": "http://diocese.ddec.nc/Sommaire.htm",
+    "eveque": {
+      "nom": "Susitino Sionepoe",
+      "titre": "Archevêque de Nouméa",
+      "depuis": "2025-01-14"
     }
   },
   {
@@ -3290,13 +3198,6 @@
     "diocese": "Diocèse de Wallis-et-Futuna",
     "type": "diocèse",
     "pays": "France",
-    "eveque": {
-      "nom": "Susitino Sionepoe",
-      "titre": "Évêque de Wallis-et-Futuna",
-      "depuis": "2018-12-24",
-      "photo": "images/bishops/susitino-sionepoe.jpg",
-      "devise": "Servir dans l'amour"
-    },
     "province": "Nouméa",
     "metropolitain": "Michel-Marie Calvet",
     "region": "Wallis-et-Futuna",
@@ -3308,10 +3209,9 @@
       "Alele",
       "Sigave"
     ],
-    "site": "https://wallis-futuna.catholique.fr",
+    "site": "http://diocese.ddec.nc/W-F/sommaire-WF.htm",
     "liturgie": {
-      "particulier": false,
-      "formule": "« ... avec notre évêque Susitino »"
+      "statut": "siege_vacant"
     }
   },
   {
@@ -3320,13 +3220,6 @@
     "diocese": "Vicariat apostolique de l'archipel des Comores",
     "type": "vicariat apostolique",
     "pays": "France",
-    "eveque": {
-      "nom": "Charles Mahuza Yava",
-      "titre": "Vicaire apostolique des Comores et Mayotte",
-      "depuis": "2010-05-01",
-      "photo": "images/bishops/charles-mahuza-yava.jpg",
-      "devise": "Caritas Christi urget nos"
-    },
     "province": "Océan Indien",
     "metropolitain": "Charles Mahuza Yava",
     "region": "Mayotte",
@@ -3338,6 +3231,13 @@
       "Dzaoudzi"
     ],
     "site": "https://comores-mayotte.catholique.fr",
+    "eveque": {
+      "nom": "Charles Mahuza Yava",
+      "titre": "Vicaire apostolique des Comores et Mayotte",
+      "depuis": "2010-05-01",
+      "photo": "images/bishops/charles-mahuza-yava.jpg",
+      "devise": "Caritas Christi urget nos"
+    },
     "liturgie": {
       "particulier": false,
       "formule": "« ... avec notre évêque Charles »"

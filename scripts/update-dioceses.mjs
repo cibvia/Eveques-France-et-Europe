@@ -49,25 +49,6 @@ const MONTHS = {
     Jul: "07", Aug: "08", Sep: "09", Oct: "10", Nov: "11", Dec: "12"
 };
 
-// Rôles reconnus comme "évêque en exercice" (on ignore auxiliaires/émérites/coadjuteurs)
-const ROLE_ALTERNATION =
-    "Cardinal Archbishop|Cardinal Bishop|Archbishop Emeritus|Bishop Emeritus|" +
-    "Auxiliary Bishop|Coadjutor Archbishop|Coadjutor Bishop|Apostolic Administrator|" +
-    "Archbishop|Bishop";
-
-// Entre le nom et le rôle, catholic-hierarchy.org insère parfois l'abréviation
-// de la congrégation religieuse du titulaire, séparée par une virgule :
-// "Jean-Marc Micas, P.S.S., Bishop of Tarbes..." ou
-// "Raymond de Felgar, O.P., Bishop of ...".
-// On l'absorbe explicitement pour ne pas la capturer à la place du nom.
-const CONGREGATION_TOKEN = "[\\p{L}.''\\-]{1,15}";
-const OPTIONAL_CONGREGATION = `(?:${CONGREGATION_TOKEN}(?:\\s+${CONGREGATION_TOKEN}){0,2},\\s*)?`;
-
-const NAME_ROLE_REGEX = new RegExp(
-    `([A-ZÀ-Þ][\\p{L}'’.\\- ]{2,80}?),\\s*${OPTIONAL_CONGREGATION}(${ROLE_ALTERNATION})`,
-    "gu"
-);
-
 // Signal explicite de vacance sur catholic-hierarchy.org (à ne pas confondre
 // avec un simple échec de parsing du nom).
 const EXPLICIT_VACANCY_REGEX = /\bSee\s+is\s+Vacant\b/i;
@@ -86,6 +67,14 @@ function parseChDate(text) {
     return `${year}-${month}-${day.padStart(2, "0")}`;
 }
 
+export function frenchTitle(diocese, role) {
+    const prefix = /Cardinal/.test(role) ? "Cardinal " : "";
+    if (/^Archidiocèse\b/i.test(diocese)) return prefix + diocese.replace(/^Archidiocèse/i, "Archevêque");
+    if (/^Diocèse\b/i.test(diocese)) return prefix + diocese.replace(/^Diocèse/i, "Évêque");
+    if (/^Éparchie\b/i.test(diocese)) return prefix + diocese.replace(/^Éparchie/i, "Éparque de l’éparchie");
+    return role;
+}
+
 async function fetchDiocesePage(slug) {
     const url = `https://www.catholic-hierarchy.org/diocese/${slug}.html`;
     const response = await fetch(url, {
@@ -94,7 +83,13 @@ async function fetchDiocesePage(slug) {
     if (!response.ok) {
         throw new Error(`HTTP ${response.status} pour ${url}`);
     }
-    return await response.text();
+    // Le site déclare ISO-8859-1 ; response.text() suppose toujours UTF-8.
+    const bytes = await response.arrayBuffer();
+    const contentType = response.headers.get("content-type") ?? "";
+    const declared = contentType.match(/charset\s*=\s*["']?([^;\s"']+)/i)?.[1];
+    const probe = new TextDecoder("windows-1252").decode(bytes.slice(0, 4096));
+    const charset = declared ?? probe.match(/charset\s*=\s*([^\s"'>;]+)/i)?.[1] ?? "utf-8";
+    return new TextDecoder(charset).decode(bytes);
 }
 
 /**
@@ -111,7 +106,7 @@ async function fetchDiocesePage(slug) {
  *                        automatiquement, il vaut mieux garder la valeur
  *                        précédente et le signaler.
  */
-function extractDioceseInfo(html) {
+export function extractDioceseInfo(html) {
     const $ = cheerio.load(html);
     const bodyText = $("body").text().replace(/[ \t]+/g, " ").replace(/\n+/g, "\n").trim();
 
@@ -130,26 +125,28 @@ function extractDioceseInfo(html) {
 
     // Section "Bishop(s)" : liste des titulaires actuels, auxiliaires et émérites,
     // avant la section "Suffragan Dioceses" ou "General Information".
-    const bishopsSectionMatch = bodyText.match(
-        /Bishop\(s\)([\s\S]*?)(?:Suffragan Dioceses|General Information)/
-    );
-
     let eveque = null;
     let administrateur = null;
     let parseStatus = "parse_failed";
 
-    if (bishopsSectionMatch) {
-        const section = bishopsSectionMatch[1];
+    const heading = $("h3").filter((_, el) => $(el).text().trim() === "Bishop(s)").first();
+    const list = heading.nextAll("ul").first();
+    if (heading.length && list.length) {
+        const section = list.text();
 
-        if (EXPLICIT_VACANCY_REGEX.test(section)) {
+        if (EXPLICIT_VACANCY_REGEX.test(section) || list.children("li").toArray().some(item => /^\s*Vacant\s*$/i.test($(item).text()))) {
             parseStatus = "vacant";
         }
 
-        NAME_ROLE_REGEX.lastIndex = 0;
-        let match;
-        while ((match = NAME_ROLE_REGEX.exec(section)) !== null) {
-            const [, rawName, role] = match;
-            const name = rawName.trim();
+        for (const item of list.children("li").toArray()) {
+            const row = $(item).clone();
+            row.find("script, style, ul").remove();
+            const person = row.find('a[href*="/bishop/"]').first();
+            const name = person.text().replace(/\s+/g, " ").trim();
+            const surname = person.find("b, strong").text().replace(/\s+/g, " ").trim();
+            const afterName = row.text().slice(row.text().indexOf(name) + name.length);
+            const role = afterName.match(/\b(Apostolic Administrator|Auxiliary Bishop|Coadjutor Archbishop|Coadjutor Bishop|Archbishop Emeritus|Bishop Emeritus|Cardinal Archbishop|Cardinal Bishop|Archbishop|Bishop)\b/)?.[1];
+            if (!name || !role) continue;
 
             if (/Auxiliary|Emeritus|Coadjutor/.test(role)) continue;
 
@@ -158,7 +155,10 @@ function extractDioceseInfo(html) {
                 continue;
             }
 
-            eveque = { nom: name, titre: role };
+            const givenNames = name.slice(0, name.length - surname.length).trim();
+            const firstName = givenNames.split(/\s+/)[0];
+            const shortName = surname && firstName ? `${firstName} ${surname}` : name;
+            eveque = { nom: name, nomUsuel: shortName, nomFamille: surname, titre: role };
             parseStatus = "ok";
             break;
         }
@@ -182,6 +182,13 @@ function extractDioceseInfo(html) {
 
 async function main() {
     const staticData = JSON.parse(await fs.readFile(STATIC_PATH, "utf8"));
+    const slugs = new Set();
+    for (const entry of staticData) {
+        if (entry.chSlug && slugs.has(entry.chSlug)) {
+            throw new Error(`Code de diocèse dupliqué : ${entry.chSlug} (${entry.id})`);
+        }
+        if (entry.chSlug) slugs.add(entry.chSlug);
+    }
 
     // Version précédente, pour calculer le vrai diff (pas juste "fetch réussi").
     let previousById = new Map();
@@ -231,19 +238,21 @@ async function main() {
             const info = extractDioceseInfo(html);
             fetched++;
 
-            base.type = info.type ?? base.type;
             base.site = info.site ?? base.site;
             base.region = info.region ?? base.region;
 
             if (info.parseStatus === "ok" && info.eveque) {
                 const previousBishop = previous?.eveque;
                 const fallbackBishop = entry.eveque_fallback;
-                const samePrevious = sameBishop(previousBishop?.nom, info.eveque.nom);
-                const sameFallback = sameBishop(fallbackBishop?.nom, info.eveque.nom);
+                const matches = bishop => sameBishop(bishop?.nom, info.eveque.nom, info.eveque.nomFamille, entry.chBishopAlias);
+                const samePrevious = matches(previousBishop);
+                const sameFallback = matches(fallbackBishop);
                 const knownBishop = samePrevious ? previousBishop : sameFallback ? fallbackBishop : null;
                 base.eveque = {
-                    nom: knownBishop?.nom ?? info.eveque.nom,
-                    titre: info.eveque.titre,
+                    nom: knownBishop?.nom ??
+                        (entry.chBishopAlias && sameBishop(entry.chBishopAlias.nomUsuel, info.eveque.nom, info.eveque.nomFamille, entry.chBishopAlias)
+                            ? entry.chBishopAlias.nomUsuel : info.eveque.nomUsuel),
+                    titre: knownBishop?.titre ?? frenchTitle(entry.diocese, info.eveque.titre),
                     depuis: info.eveque.depuis ?? knownBishop?.depuis ?? null,
                     // photo et devise ne sont pas disponibles sur catholic-hierarchy.org :
                     // on conserve celles déjà connues si le nom de l'évêque n'a pas changé.
@@ -254,7 +263,11 @@ async function main() {
                         (samePrevious ? previousBishop.devise : undefined) ??
                         (sameFallback ? fallbackBishop.devise : undefined)
                 };
-                delete base.liturgie;
+                if (samePrevious && previous?.liturgie && previous.liturgie.statut !== "siege_vacant") {
+                    base.liturgie = previous.liturgie;
+                } else {
+                    delete base.liturgie;
+                }
                 console.log(`OK — ${info.eveque.nom}`);
 
                 const previousNom = previous?.eveque?.nom;
@@ -264,7 +277,7 @@ async function main() {
                             id: entry.id,
                             diocese: entry.diocese,
                             ancien: previousNom,
-                            nouveau: info.eveque.nom,
+                            nouveau: base.eveque.nom,
                             depuis: info.eveque.depuis
                         });
                     } else if (previous?.liturgie?.statut === "siege_vacant") {
@@ -272,7 +285,7 @@ async function main() {
                             id: entry.id,
                             diocese: entry.diocese,
                             ancien: "(siège vacant)",
-                            nouveau: info.eveque.nom,
+                            nouveau: base.eveque.nom,
                             depuis: info.eveque.depuis
                         });
                     }
@@ -351,7 +364,9 @@ async function main() {
     }
 }
 
-main().catch(err => {
-    console.error("Erreur fatale :", err);
-    process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+    main().catch(err => {
+        console.error("Erreur fatale :", err);
+        process.exit(1);
+    });
+}

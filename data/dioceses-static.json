@@ -479,7 +479,7 @@
       "Nyons"
     ],
     "site": "https://valence.catholique.fr",
-    "chSlug": "dvann",
+    "chSlug": "dvalf",
     "eveque_fallback": {
       "nom": "François Durand",
       "titre": "Évêque de Valence",
@@ -1615,6 +1615,10 @@
     ],
     "site": "https://reims.catholique.fr",
     "chSlug": "dreim",
+    "chBishopAlias": {
+      "nomUsuel": "Éric de Moulins-Beaufort",
+      "nomSource": "Éric Marie de Moulins d’Amieu de Beaufort"
+    },
     "eveque_fallback": {
       "nom": "Éric de Moulins-Beaufort",
       "titre": "Archevêque de Reims",
@@ -2250,6 +2254,10 @@
     ],
     "site": "https://catholique-verdun.fr",
     "chSlug": "dverd",
+    "chBishopAlias": {
+      "nomUsuel": "Joseph de Metz-Noblat",
+      "nomSource": "Joseph-Marie-Edouard de Metz-Noblat"
+    },
     "eveque_fallback": {
       "nom": "Jean-Paul Gusching",
       "titre": "Évêque de Verdun",
@@ -2347,7 +2355,7 @@
       "Avallon"
     ],
     "site": "https://www.yonne.catholique.fr",
-    "chSlug": "damie",
+    "chSlug": "dsens",
     "eveque_fallback": {
       "nom": "Pascal Wintzer",
       "titre": "Archevêque de Sens et Auxerre",
@@ -3052,7 +3060,7 @@
       "Bases de défense"
     ],
     "site": "https://dioceseauxarmees.fr",
-    "chSlug": "dcout",
+    "chSlug": "dmlfr",
     "eveque_fallback": {
       "nom": "Antoine de Romanet",
       "titre": "Évêque aux Armées",
@@ -3248,7 +3256,7 @@
       "Kourou"
     ],
     "site": "https://guyane.catholique.fr",
-    "chSlug": "dvann",
+    "chSlug": "dcaye",
     "eveque_fallback": {
       "nom": "Alain Ransay",
       "titre": "Évêque de Cayenne",
@@ -3281,7 +3289,7 @@
       "Saint-André"
     ],
     "site": "https://reunion.catholique.fr",
-    "chSlug": "dpaar",
+    "chSlug": "dsdlr",
     "eveque_fallback": {
       "nom": "Pascal Chane-Teng",
       "titre": "Évêque de Saint-Denis de La Réunion",
