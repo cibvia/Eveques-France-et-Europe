@@ -1678,8 +1678,10 @@
       "Château-Thierry"
     ],
     "site": "http://www.soissons.catholique.fr/",
-    "liturgie": {
-      "statut": "siege_vacant"
+    "eveque": {
+      "nom": "Martial Bernard",
+      "titre": "Évêque de Soissons, Laon et Saint-Quentin",
+      "depuis": "2026-10-31"
     }
   },
   {
